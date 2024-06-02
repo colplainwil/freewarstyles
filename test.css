@@ -1,0 +1,62 @@
+/* Freewar Style CSS */
+
+body {
+    background-color: #ff0000; /* Red background */
+    color: #000000;           /* Black font color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000; /* Black font color for headings */
+}
+
+p {
+    color: #000000; /* Black font color for paragraphs */
+}
+
+a {
+    color: #000000; /* Black font color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ff0000; /* Red background for container */
+    color: #000000; /* Black font color for container */
+}
+
+button {
+    background-color: #000000; /* Black background for buttons */
+    color: #ff0000; /* Red font color for buttons */
+    border: 1px solid #ff0000; /* Red border for buttons */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #000000; /* Black font color on hover */
+    border: 1px solid #000000; /* Black border on hover */
+}
+
+input[type="text"], input[type="password"], textarea {
+    background-color: #ff0000; /* Red background for input fields */
+    color: #000000; /* Black font color for input fields */
+    border: 1px solid #000000; /* Black border for input fields */
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder, textarea::placeholder {
+    color: #000000; /* Black font color for placeholder text */
+}
