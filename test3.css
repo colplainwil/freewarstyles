@@ -1,0 +1,382 @@
+/*
+Style: ChangeColor > Dunkel
+Version: 1.0
+Zuletzt geupdatet: 08.04.10
+Besonderheiten: /
+Stylebastler: tanine
+Optimiert für: 1024x768, Firefox 3.0
+Infos unter: http://213.239.193.180/freewar/forum/viewtopic.php?f=18&t=27243
+
+*/
+
+
+/* allgemeine sachen */
+                p,ul,ol,div,td,span,layer,table,body        { font-family: Arial, helvetica, sans-serif; font-size: 12px; color: #8A8A8A; }
+                p                                         { margin: 0px; padding: 0px; }
+                body                                 { background-color: #000000; margin: 0px; }
+                table                                 { border:0px; border-collapse: collapse; }
+
+/* links */
+                 a:link { color:#989898; text-decoration:none; font-weight:bold; }
+                a:visited { color:#989898; text-decoration:none; font-weight:bold; }
+                a:focus { color:#989898; text-decoration: none; font-weight:bold; }
+                a:active { color:#989898; text-decoration:none; font-weight:bold; }
+                a:hover  { color:#CBCBCB; text-decoration:none; font-weight:bold; }
+
+/* fonts */
+                h1 { font-size:12px; font-weight:bold; margin-bottom: 0px;}
+                .medium { font-size:11px; }
+                .small { font-size:10px; }
+
+/* colors */
+                .fontcolor { color: #8E8E8E; }
+                .white { color: #ffffff; }
+
+/* bgcolors */
+                .body { background-color: #000000; }
+                .divider { background-color: #8A8A8A; }
+                .outline { background-color: #8A8A8A; }
+                .menubg        { background-color: #2A2A2A; }
+
+/* forms */
+                .registerinput { width: 100%; font-size: 10px;}
+                .registersubmit { font-size: 10px;}
+                 .logininput { width: 100%; font-size: 10px;}
+                 .loginsubmit { width: 100%; font-size: 10px; }
+
+/* forms */
+                .submitsagen                 { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #CACACA; width: 100px; margin-right: 2px; background-color: #393939; border: thin #000000 solid; margin-left: 2px; }
+                .submitschreien         { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #A1A7F0; width: 100px; margin-right: 2px; background-color: #393939; border: thin #000000 solid; }
+                .submitclan                 { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #FF5151; width: 100px; margin-right: 2px; background-color: #393939; border: thin #000000 solid; }
+                .submitgroup                 { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #6BE6AF; width: 100px; margin-right: 2px; background-color: #393939;  border: thin #000000 solid; }
+                .submitworldsay         { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #A40000; width: 18px; margin-right: 2px; border: thin #8A8A8A solid; background-color: #393939; }
+                .submitwhisper           { background-image: url(button.jpg); font-size: 10px; font-weight: bold; color: #777777; width: 100px; margin-right: 2px;  background-color: #393939; border: thin #000000 solid; margin-left: 1px; }
+
+               textarea                        { font-size: 12px; width: 100%; background-color: #2A2A2A; border: thin #8A8A8A solid; color: #8A8A8A;}
+                select                                 { font-size: 11px; background-color: #212121; color: #8A8A8A; border: thin #8A8A8A solid; }
+                input                                 { background-image: url(input.jpg); font-size: 11px; background-color: #393939; border: thin #515151 solid; color: #B0B0B0;}
+
+form > input[type="text"] { -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+
+/* buttons, wenn diese ausgewählt sind (per tasta bsp.) */
+                .submitsagen:focus {color:#E9E9E9; }
+                .submitschreien:focus {color:#D8DBF8;}
+                .submitclan:focus {color:#FFB1B1; }
+                .submitgroup:focus {color:#BFF4DC; }
+                .submitworldsay:focus {color:#022C3B; }
+                .submitwhisper:focus {color:#B8B8B8; }
+
+/* banner stuff */
+                .bannerad { border: 0px; }
+
+/* text classes */
+
+                .chattext { color: #CACACA; font-size: 13px; }
+                .chattextscream { color: #A1A7F0; font-size: 13px; }
+                .chattextclan { color: #FF5151; font-size: 13px; }
+                .chattextinfo { color: #D6DCDF; background-color: #1A324F; font-style: italic; font-size: 13px; }
+                .chattextworldsay { color: #FFFFFF; font-size: 13px; }
+                .chattextgroup { color:#6BE6AF; font-size: 13px;}
+                .chattextwhisper { color: #777777; font-size: 13px; }
+                .chatpics { display: none; }
+/* lebenspunkte */
+                      .healthok { color: #8DCF49; }
+                      .healthmed { color: #DE8542; }
+                      .healthcritical { color: #E04F4F; }
+
+                .chattextinfo:before {content: url(wetter.jpg); margin-right: 0px;}
+                .chattextwhisper:before {content: url(modchat.png); margin-right: 0px; }
+
+/* frames bg */
+
+                .framebannerbg { margin: 6px; background-color: #000000; border-bottom: 0 px;}
+                .framechatformbg { margin-left: 1px; margin-right: 1px; margin-bottom: 3px; margin-top: -1; background-color: #01011D; background-image: url(hintergrund2.gif); }
+		.framechatformbg .input { -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+                .framechattextbg { margin: 6px; background-color: #000000;}
+                .framemainbg {  margin: 6px; background-color: #000000; }
+                .frameitembg { margin: 6px; background-color: #000000; }
+			.frameitembg textarea { width: 100%; height: 50%; -moz-border-radius: 6px; -webkit-border-radius:6px; }
+                .framemapbg { margin:6px; background-color: #000000;}
+                .framemenubg { color: #01011D; margin-bottom: 5px; background-color: #000000; background-position: bottom; background-image: url(bg_main.jpg); background-repeat: repeat-x;}
+			.framemenubg div{color: #01011D;}
+			.framemainbg p.listrow {-moz-border-radius: 7px; -webkit-border-radius: 7px; }
+			.framemainbg textarea { width: 100% !important; height: 70% !important; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+
+/* main module */
+                /* die überschrift des feldes */
+
+                td.mainheader { background-color: #393939; background-image: url(hintergrund2.gif); border: thin #131313 solid; color: #ABABAB;  font-size: 32px;}
+                /* die feldbeschreibung */
+                td.areadescription:first-letter {font-size: 18px;color: #ACACAC;}
+		td.areadescription > form > input[type="text"] { -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+                table.areadescription { border: 0px; background-color: #0C0C0C; border: thin #0C0C0C solid; color: #000000;  width: 100%; }
+                td.areadescription {padding: 5px; font-size: 12; color: #8E8E8E;}
+                /* das bild des feldes im mainframe */
+                .imageborder { border: thin #131313 solid; background-color: transparent; margin-right: 10px; margin-bottom: 0px;}
+                /* überschrift vom kampfbericht */
+	       p.maincaption {background-color: #01011D; font-weight: bold; font-size: 30px; padding: 2px; padding-left: 5px; border: thin #131313 solid; color: #8E8E8E;}
+                /* kleinere überschrift: kampfdaten des gegners */
+                p.maincaption2 { -moz-border-radius: 5px; -webkit-border-radius: 5px; background-image: url(hintergrund2.gif); font-weight: bold; font-size: 12px; padding: 2px; padding-left: 5px; background-color: #393939; border: thin #131313 solid; color: #8E8E8E;}
+                /* rest des kampfberichtes: mein name, meine waffe */
+                p.maindesc1 { padding: 2px; padding-left: 5px; background-color: #212121;  border: thin #131313 solid; border-top: 1px; width: 300px; }
+                /* bei der unterteilung, ob man schlagen, direkt angreifen, markieren möchte */
+                p.maindesc2 { -moz-border-radius: 6px; -webkit-border-radius: 6px; border: thin #151515 solid; background-color: #0C0C0C;  }
+                /* hintergrund der leute/items, die man sieht */
+                p.listplaceitemsrow { padding: 2px; padding-left: 5px; background-color: #2A2A2A; border: thin #333333 solid; color: #C2C2C2; border-top: 0px; }
+                p.listusersrow { padding: 2px; padding-left: 5px; border-top: 0px; border-bottom: 0px; background-color: #2A2A2A; border: thin #333333 solid; border-top:0px; color: #B6B6B6;}
+
+/* item module */
+                /* hintergrund von den überschriften inventar, .. */
+                p.listcaption { text-align: center !important; color: #ABABAB; background-image: url(hintergrund2.gif);background-color: #393939; border: thin #131313 solid; font-weight: bold; padding: 2px; padding-left:2px;}
+                p.listsubcaption { border-bottom: 0px; }
+                /* oberer teil der werte im itemframe */
+                p.listrow { font-size: 11px; padding: 0px; padding-left: 0px; background-color: #0C0C0C; border: thin #151515 solid; border-top: 0px;}
+                /* definition der links im itemframe im bereich der werte */
+                p.listrow a:link { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listrow a:visited { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listrow a:focus { color:#818181; text-decoration: none; font-weight:bold; }
+                p.listrow a:active { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listrow a:hover  { color:#989898; text-decoration:none; font-weight:bold; }
+                /* definition der links im inventar */
+		p.listitemrow:hover { color: #FFFFFF; background-color: #2A2A2A; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+		p.listitemrow:hover a:link{ color:#E87C7C;}
+		p.listitemrow:hover a:visited{ color:#E87C7C;}
+		p.listitemrow:hover a:focus{ color:#E87C7C;}
+		p.listitemrow:hover a:active{ color:#E87C7C;}
+		p.listitemrow:hover a:hover{ color:#EC1818;}
+                p.listitemrow a:link { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listitemrow a:visited { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listitemrow a:focus { color:#818181; text-decoration: none; font-weight:bold; }
+                p.listitemrow a:active { color:#818181; text-decoration:none; font-weight:bold; }
+                p.listitemrow a:hover  { color:#989898; text-decoration:none; font-weight:bold; }
+                /* inventar */
+                p.listitemrow { -moz-border-radius: 5px; -webkit-border-radius: 5px; font-size: 12px; color: #B3B3B3; padding: 1px; padding-left: 1px; background-color: #171717; border: thin #333333 solid; border-top: 0px; margin-bottom: 1px; }
+                p.listitemrow a {font-size:10px;}
+                p.listmainrow { background-image: url(03_klein.jpg);padding: 0px; min-height: 55px; padding-left: 0px; background-color: #2A2A2A; border: thin #333333 solid; border-top: 0px; }
+		#filterrow {-moz-border-radius: 5px; -webkit-border-radius: 5px; margin-bottom: 5px; }
+
+                /* wert durch waffe */
+               .valueincreased { font-weight: bold; color: #ACA576; }
+               /* anzal der items; angelegte waffe; magische items; */
+                .itemamount { font-weight: bold; color: #EB2F2E;}
+                .itemequipped { font-weight: bold; background-color: #9D9D9D; color: #000000; border: thin #8A8A8A solid; }
+                .itemmagic { font-weight: bold; color: #6DA66B; }
+
+                .iteminventorypics { display: none;}
+
+		.frameitembg a[href*="item.php?action=transfer2"] { display: inline-block; margin-bottom: 5px; margin-left: 5px; }
+		.frameitembg a[href*="item.php?action=moneytransfer3"] { display: inline-block; margin-bottom: 5px; margin-left: 5px; }
+
+/* map module */
+                p.positiontext {padding: 2px; padding-left:2px; font-size: 11px; background-image: url(hintergrund2.gif);border: thin #131313 solid; margin-bottom: 2px; background-color: #393939; color: #8E8E8E;}
+
+/* main module - (Du siehst keine Person/Items an diesem Ort) */
+                p.personlistcaption { -moz-border-radius: 5px; -webkit-border-radius: 5px; font-weight: bold; padding: 2px; padding-left: 5px; background-color: #01011D; border: thin #131313 solid; color: #8E8E8E;}
+                p.itemlistcaption { -moz-border-radius: 5px; -webkit-border-radius: 5px; background-image: url(hintergrund2.gif); font-weight: bold; padding: 2px; padding-left: 5px; background-color: #01011D; border: thin #131313 solid; color: #8E8E8E;}
+	       #plantrow {  border: thin #131313 solid; color: #8E8E8E; background-color: #01011D; background-image: url(bg_main.jpg); }
+
+
+/* Profil */
+                legend {-moz-border-radius: 5px; -webkit-border-radius: 5px; background-color:transparent; border: thin #8A8A8A solid; color: #8E8E8E;}
+                fieldset {-moz-border-radius: 10px; -webkit-border-radius: 10px; background-color:#2A2A2A; border: thin #8A8A8A solid; color: #8E8E8E;}
+
+/* Titel Modtele*/
+                p.chattextwhisper span b{color:#E98826;}
+/* Modtele */
+                p.chattextwhisper span {color:#E98826!important;}
+
+
+/* worldsay orange */
+   /* Hintergrund */
+               p.worldsay table tr[bgcolor="#F8A370"] { background-color:#461D04; border: thin #0C2A4A solid; }
+               p.worldsay table tr td:before {content: url(wetter.png); margin-right: 0px;}
+               /* Schriftfarbe */
+               p.worldsay table tr[bgcolor="#F8A370"] td { color:#FCDFCB;}
+/* worldsay blau */
+   /* Hintergrund */
+               p.worldsay table tr[bgcolor="#C1CEF9"] { background-color:#0C2846; border: thin #0C2A4A solid; }
+               p.worldsay table tr td:before {content: url(wetter.png); margin-right: 0px;}
+               /* Schriftfarbe */
+               p.worldsay table tr[bgcolor="#C1CEF9"] td { color:#ADD5FF;}
+/* worldsay grün*/
+               /* Hintergrund */
+               p.worldsay table tr[bgcolor="#99EE99"] { width: 100%; background-repeat: no-repeat; background-position:right; background-color:#0B470B; border: thin #051C05 solid; }
+               /* Schriftfarbe */
+               p.worldsay table tr[bgcolor="#99EE99"] td { width:100%; color:#CCF7CC;}
+
+/* scollpic */
+              img[src$="icon_scroll.gif"] { display: none; }
+
+/* trennlinie */
+              img[src$="item_divider.gif"] { display: none; }
+
+/* schnellzauber anpassen */
+              #fastspell td { text-align: center !important; background-color: #01011D; border: thin #131313 solid; color: #ABABAB;  font-weight: bold; padding: 2px; padding-left: 5px;}
+              #fastspell table {background-color: #00FF00; }
+
+
+/* löschbutton beim Schnellzauber tauschen */
+              img[src$="close.gif"] { display: none; }
+              a[href*="fastspell"]:after { content: url(close.png); }
+              
+	      /* gleicher button im charafähigkeitenmenü */
+              a[href*="delqueue&queue=1"]:after { content: url(close.png); }
+              a[href*="delqueue&queue=2"]:after { content: url(close.png); }
+	      /* button in der freundesliste */
+	      a[href*="delete&act_user_id="]:after { content: url(close.png); }
+	      a[href*="friends.php?action=delete"]:after { content: url(close.png); }
+
+
+
+/* die pfeile über der map */
+
+a[onClick*="javascript:Move('up')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('up')"]:hover {background: url(pfeil_up.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('upright')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('upright')"]:hover {background: url(pfeil_upright.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('right')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('right')"]:hover {background: url(pfeil_right.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('downright')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('downright')"]:hover {background: url(pfeil_downright.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('down')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('down')"]:hover {background: url(pfeil_down.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('downleft')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('downleft')"]:hover {background: url(pfeil_downleft.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('left')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('left')"]:hover {background: url(pfeil_left.png) top left no-repeat; -moz-opacity:0.5;}
+
+a[onClick*="javascript:Move('upleft')"] {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a[onClick*="javascript:Move('upleft')"]:hover {background: url(pfeil_upleft.png) top left no-repeat; -moz-opacity:0.5;}
+
+
+
+
+ 
+/* austauschen des kreuzes auf der map */
+              img[src$="user.gif"] { display: block; width: 0; background: url(kreuz.png); no-repeat; padding-left: 50px; overflow: hidden; }
+
+/* die markierung, wenn man mit der maus über nicht betretbare felder kommt */
+              img.nocango {background: transparent;}
+              a.nocango {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+              a.nocango:hover {background: url(bergfeld.png) top left no-repeat; cursor: default;}
+
+/* adminmenü */
+/* worldsaylink im adminmenü auffällig (mit den achtungschildern) */
+             a[href*="admin.php?action=worldsay"]:after { content: url(modchat2.png); }
+             a[href*="admin.php?action=worldsay"]:before { content: url(modchat.png); }
+             a[href*="admin.php?action=worldsay"] { color:#FF0000; text-decoration:none; font-weight:bold; }
+             a[href*="admin.php?action=worldsay"]:hover { color:#FF9F00; text-decoration:none; font-weight:bold; }
+
+/* link zum modchat auffällig */
+             a[href*="admin.php?action=modchat"] { color:#00A692; text-decoration:none; font-weight:bold; }
+             a[href*="admin.php?action=modchat"]:hover { color:#0080FF; text-decoration:none; font-weight:bold;}
+
+/* verkleinern der links im adminbereich */
+             a[href*="admin.php"] { font-size: 12px !important; }
+             a[href*="admin.php"]:hover { font-size: 12px !important; }
+
+/* rotfärben des worldsaybuttons */
+             input[value$="Worldsay"] {color: #FFFFFF; background-image: url(worldsay.jpg);border: thin #E20000 solid; }
+
+/* link zum knasten auffälliger */
+             a[href*="admin.php?action=punish"] { color:#6F4612; text-decoration:none; font-weight:bold; }
+             a[href*="admin.php?action=punish"]:hover { color:#DB5B22; text-decoration:none; font-weight:bold; }
+
+/* mapframe, ausloggen */
+            a[href~="map.php"]:after { content: url(bg_map.png); margin-left: 140px;}
+
+
+/* Angriffsmenü */
+		p.maindesc2 {color: #5E5E5E; font-size: 11px; padding: 5px; border: thin solid #151515; -moz-border-radius: 6px; -webkit-border-radius: 6px; padding-left: 51px; padding-bottom: 20px; }
+		p.maindesc2 a { color: #B28281;}
+		p.maindesc2 a[href*="mark=0"] { display: inline-block; }
+		p.maindesc2 a[href*="mark=0"]:before { content: url(a_gruppe.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+		p.maindesc2 a[href*="mark=1"] { display: inline-block; margin-top: 10px; }
+		p.maindesc2 a[href*="mark=1"]:before { content: url(a_gruppe1.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+		p.maindesc2 a[href*="mark=2"] { display: inline-block; margin-top: 10px; }
+		p.maindesc2 a[href*="mark=2"]:before { content: url(a_gruppe2.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+		p.maindesc2 a[href*="action=slapuser"] { display: inline-block; }
+		p.maindesc2 a[href*="action=slapuser"]:before { content: url(a_gruppe.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+		p.maindesc2 a[href*="action=spituser"] { display: inline-block; margin-top: 10px; }
+		p.maindesc2 a[href*="action=spituser"]:before { content: url(a_gruppe1.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+		p.maindesc2 a[href*="action=attack"] { color: #D20000; display: inline-block; margin-top: 10px; }
+		p.maindesc2 a[href*="action=attack"]:before { content: url(a_gruppe2.png); display: block; margin-left: -51px; margin-bottom: -40px; }
+
+/* Flüster-Grafik tauschen */
+		img[src$="blase.gif"] { display: none; }
+		a[href*="whisperuser"]:after { content: url(fluester.png); }
+
+/* Sponsor-Sterne im Main-Frame */
+		.framemainbg img[src$="sponsor.gif"] { display: inline-block; width: 0px; height: 10px; background: url(s_rot.png); background-repeat: no-repeat; padding-left: 13px; overflow: hidden; }
+		.framemainbg img[src$="sponsor2.gif"] { display: inline-block; width: 0px; height: 10px; background: url(s_gruen.png); background-repeat: no-repeat; padding-left: 13px; overflow: hidden; }
+		.framemainbg img[src$="sponsor3.gif"] { display: inline-block; width: 0px; height: 10px; background: url(s_blau.png); background-repeat: no-repeat; padding-left: 13px; overflow: hidden; }
+
+/* Sponsor-Sterne im Item-Frame */
+		.frameitembg img[src$="sponsor.gif"] { display: inline-block; width: 0px; height: 11px; background: url(s_rot.png); background-repeat: no-repeat; padding-left: 12px; overflow: hidden; }
+		.frameitembg img[src$="sponsor2.gif"] { display: inline-block; width: 0px; height: 11px; background: url(s_gruen.png); background-repeat: no-repeat; padding-left: 12px; overflow: hidden; }
+		.frameitembg img[src$="sponsor3.gif"] { display: inline-block; width: 0px; height: 11px; background: url(s_blau.png); background-repeat: no-repeat; padding-left: 12px; overflow: hidden; }
+
+
+/* Bild für Gruppeneinladung */
+		img[src$="group.gif"] { display: none; }
+		a[href*="fight.php?action=groupinvite"]:after { content: url(invite.png); }
+		/* zufallsgruppenbild */
+		a[href*="fight.php?action=groupjoinrand"]:after { content: url(invite.png); }
+		/* freundesliste */
+		a[href*="fight.php?action=groupinvite&act_user_id="]:after { content: url(invite.png); }
+
+
+
+/* Einstellungen */
+		a[href*="profil.php?action=skip"]:before { content: url(check.png); padding-right: 2px; }
+		a[href*="profil.php?action=skip"]:hover { color: #D20000 !important; }
+		a[href*="profil.php?action=show"]:before { content: url(cross.png); padding-right: 2px; }
+		a[href*="profil.php?action=show"]:hover { color: #008800 !important; }
+		form > input[name="ownstyle"] { width: 60%; }
+
+/* clannotruf */
+		.frameitembg a[href*="clanmenu.php?action=sos"] { color: #D57C7C !important; }
+
+/* tabelle im unique-anfordern bereich */
+
+		table .bg1, table .bg2 {background-color: #0C0C0C; border-color: #515151;}
+
+/* ausblenden der buttons im worldsay */
+ a[href*="http://www.galaxy-news.de/"] { display:none;}
+ a[href*="http://voting.gdynamite.de"] { display:none;}
+ a[href*="http://www.gamessphere.de"] {display:none;}
+
+
+/* worldsay orange */
+/* Hintergrund */
+p.worldsay table tr[bgcolor="#F8A370"] { background-color:#461D04; border: thin #0C2A4A solid; }
+/* Schriftfarbe */
+p.worldsay table tr[bgcolor="#F8A370"] td { color:#FCDFCB;}
+
+/* worldsay gelb */
+/* Hintergrund */
+p.worldsay table tr[bgcolor="#FFDA47"] { background-color:#461D04; border: thin #0C2A4A solid; }
+/* Schriftfarbe */
+p.worldsay table tr[bgcolor="#FFDA47"] td { color:#FCDFCB;}
+
+/* worldsay pink */
+/* Hintergrund */
+p.worldsay table tr[bgcolor="#FFAEA1"] { background-color:#461D04; border: thin #0C2A4A solid; }
+/* Schriftfarbe */
+p.worldsay table tr[bgcolor="#FFAEA1"] td { color:#FCDFCB;}
+
+
+/* schnellangriff */
+ a[href*="fight.php?action=attacknpc&checkid="] { color:#EE8484;font-weight:bold;}
+ a[href*="fight.php?action=attacknpc&checkid="]:hover { color:#F3A4A4;font-weight:bold;}
+
+
+/* rotfärben des ändern-buttons */
+             input[value$="Ändern"] {color: #FFFFFF; background-image: url(worldsay.jpg);border: thin #E20000 solid; }
+             a[href*="profil.php?action=changestyle"]:after {content: url(sad2.png); }
