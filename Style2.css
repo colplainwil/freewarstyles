@@ -1,0 +1,1466 @@
+
+/* made by Mordino Mordas W7*/
+/* basiert auf Mittelalter Style 
+/* Teile des Styles wurden aus anderen Styles übernommen */
+/* danke an Cembon, Isdrador, Latzhosenträger und Sotrax */
+
+/* body */
+body 				{
+	background-attachment: fixed;
+}
+/* Style Base */
+/* GLOBAL VARS */
+:root {
+	--sellitem: #1A8408;
+	--sellmaybe: #826500;
+	--maha: #007FDB;
+	--shop: #008b00;
+	--luxus:#FF6600;
+	--rare: #B642FF;
+	--tollo: #cc8e85;
+	--link: #FF9900;
+	--backg:#200000;
+}
+/* Ortsgrafik Fix */
+.framemapbg td, .framemapbg td a { display: inline-block; position: relative; width: 50px; height: 50px; }
+
+p,ul,ol,div,td,span,
+layer,table,body	{
+	font-family: Arial, helvetica, sans-serif;
+	font-size: var(--font12);
+	color: #FFC6C6;
+}
+p 					{
+	margin: 0px;
+	padding: 0px;
+}
+.areadescription b { 
+  font-weight: bold;
+  color: #DB9967;
+}
+.chattext  b { 
+  font-weight: bold;
+  color: #DDB08D;
+}
+
+/* body */
+body 				{
+	background-color: #200000;
+	margin: 0px;
+}
+
+/* table */
+table 				{
+	border: 0px;
+	border-collapse: collapse;
+	background-color: #200000;
+} /* cellspacing & cellpadding & border =0 no longer needed
+td 					{ padding:0px; margin:0px; }
+
+/* links */
+a:link {
+	color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:active {
+	color: #FF9900;
+	text-decoration: hover;
+	font-weight: bold;
+}
+a:hover  {
+	color: #FFFF00;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* fonts */
+h1 { font-size: var(--font12); font-weight:bold; margin-bottom: 0px;}
+.medium { font-size: var(--font11); }
+.small { font-size: var(--font10); }
+
+/* colors */
+.fontcolor { color: #555555; }
+.white { color: #FFE1E1; }
+
+/* bgcolors */
+.body {
+	background-color: #200000;
+}
+.divider {
+	background-color: #800000;
+}
+.outline {
+	background-color: #000000;
+}
+.menubg	{
+	background-color: #200000;
+}
+
+.brightbg	{
+	background-color: #B30000;
+}
+.verybrightbg	{
+	background-color: #D90000;
+}
+.reallybrightbg	{
+	background-color: #FF0000;
+}
+
+.whitebg { background-color: #FFE1E1; }
+.blackbg { background-color: #000000; }
+.brownbg { background-color: #2F0103; }
+
+/* forms */
+.registerinput { width: 100%; font-size: var(--font10); background-color: #2D0000; 	color: #FFE1E1;}
+.registersubmit { font-size: var(--font10); 	background-color: #2D0000; 	color: #FFE1E1;}
+.logininput { width: 100%; font-size: var(--font10); background-color: #2D0000; 	color: #FFE1E1;}
+.loginsubmit { width: 100%; font-size: var(--font10); background-color: #2D0000; 	color: #FFE1E1;}
+
+/* forms */
+.input 				{
+	font-size: var(--font10);
+	background-color: #2D0000;
+	border: 1px solid #C85424;
+	color: #FFE1E1;
+}
+
+.submitsagen 		{
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #FFE1E1;
+	width: 80px;
+	margin-left: 1px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitschreien 	{
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #0099CC;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitclan 		{
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #D20000;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitgroup		{
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #FC7410;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitworldsay 	{
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #FFE1E1;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitwhisper {
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #006600;
+	width: 80px;
+	margin-left: 1px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+.submitglobalchat {
+	font-size: var(--font10);
+	font-weight: bold;
+	color: #6E621E;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #300000;
+}
+textarea			{
+	font-size: var(--font12);
+	background-color: #2f0000;
+	color: #FFAAAA;
+	border: 1px solid #C85424;
+}
+select 				{
+	font-size: var(--font11);
+	background-color: #2F0000;
+	color: #FFAAAA;
+	height: 30px;
+}
+
+/* banner stuff */
+.bannerad { border: 1px solid #C85424; }
+
+
+
+/* text classes */
+.chattext {
+	color: #FFE1E1;
+	font-size: var(--font13);
+}
+.chattextscream {
+	color: #0099CC;
+	font-size: var(--font13);
+}
+.chattextclan { color: #D20000; font-size: var(--font13); }
+.chattextinfo { color: #A37300; font-size: var(--font13); }
+.chattextgroup { color: #CE5A21; font-size: var(--font13); }
+.chattextwhisper { color: #006600; font-size: var(--font13); }
+.chattextinspiration { color: #964119 !important; font-size: var(--font13); }
+.chattextgoldteilen { color: #964119 !important; font-size: var(--font13); }
+.chattextglobal { color: #6e621e; font-size: var(--font13); }
+.chattime { color: #FFE1E1 !important; }
+
+.chattextworldsay {
+	color: #FFE1E1;
+	background-color: #C1CEF9;
+	font-size: var(--font13);
+}
+
+
+
+
+.healthok { font-weight: bold; color: #009800; }
+.healthmed { color: #FF8000; font-weight: bold; }
+.healthcritical { color: #F00000; font-weight: bold; }
+
+.chatpics { display: none }
+
+
+.framechattextbg {
+	background-color: #100000;
+	margin: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.framemainbg {
+	margin: 10px;
+	background-repeat: repeat-y;
+	background-position: right;
+	background-color: #200000;
+}
+.frameitembg {
+	margin: 10px;
+	background-color: #200000;
+}
+.framemapbg {
+	margin: 10px;
+	margin-top: 3px;
+	background-color: #200000;
+}
+
+.framemenubg {
+	background-color: #200000;
+}
+
+/* main module */
+td.mainheader {
+	font-size: 35px;
+	border-bottom: 2px solid #999999;
+	height: 55px;
+	background-color: #200000;
+}
+
+table.areadescription {
+	border: 1px solid #999999;
+	background-color: #200000;
+	width: 100%;
+}
+td.areadescription { padding: 5px; background-repeat: no-repeat; }
+.imageborder {
+	border: 1px solid #999999;
+	background-color: #200000;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+p.maincaption { font-weight: bold; font-size: 30px; padding: 2px; padding-left: 5px; }
+p.maincaption2 { font-weight: bold; font-size: var(--font12); padding: 2px; padding-left: 5px; background-repeat: no-repeat; }
+p.maindesc1 { padding: 2px; padding-left: 5px; background-color: #300101; border: 1px solid #D6CBC2; border-top: 1px; width: 300px; }
+p.maindesc2 { border: 1px solid #999999; background-color: #300101; width: 100%; }
+p.listusersrow { padding: 1px; padding-left: 5px; background-color: #300101; border: 0px solid #D6CBC2; border-top: 0px; }
+p.listplaceitemsrow { padding: 1px; padding-left: 5px; background-color: #300101; border: 0px solid #D6CBC2; border-top: 0px; }
+.customfilters tr { background-color: #3E0A07!important; } 
+
+/* item module */
+p.listcaption { border: 1px solid #A2A09F; font-size: var(--font11); font-weight: bold; white-space: nowrap; padding: 2px; padding-left: 5px; }
+p.listsubcaption { border-bottom: 1px solid #D6CBC2; }
+p.listrow { padding: 1px; padding-left: 5px; background-color: #200000; border: 0px solid #D6CBC2; border-top: 0px;}
+p.listitemrow { padding: 2px; padding-left: 5px; background-color: #200000; border: 1px solid #D6CBC2; border-top: 0px; border-top: 1px solid #D6CBC2; margin-bottom: 3px;  font-size: var(--font10); white-space: nowrap;text-overflow: ellipsis;}
+p.listmainrow { padding: 2px; min-height: 55px; padding-left: 5px; background-color: #200000; border: 1px solid #D6CBC2; border-top: 0px; }
+.valueincreased { font-weight: bold; color: #ff0000; }
+.itemamount { font-weight: bold; color: #E84848; }
+.itemequipped { font-weight: bold; color: #C32323; }
+.itemmagic { font-weight: bold; color: #008800; }
+.iteminventorypics { display: none }
+
+/* map module */
+p.positiontext {
+	background-color: #BBBBBB;
+	border: 1px solid #555555;
+	color: #FFE1E1;
+	font-size: var(--font11);
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+/* main module */
+p.personlistcaption { border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; }
+p.itemlistcaption { border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; }
+
+
+/* misc */
+.borderbg { background-color: #D0CFCF; }
+
+img.nocango {background: transparent;}
+a.nocango {background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+a.nocango:hover {background: url(red_images/map/nocango.gif) top left no-repeat; cursor: default;}
+
+.abilitymenu { border:0px; border-collapse: collapse; }
+.abilitymenu tr { padding: 2px; padding-left: 5px; background-color: #200000; }
+.abilitymenu td {text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #D6CBC2; font-size:12px;}
+td.c1 {text-align: left;}
+.bold td{font-weight:bold;}
+
+/* ####################### ERWEITERUNGEN ########################## */
+/* Phasenenergy */
+#phasespacer {
+display : inline-block;
+height : 8px;
+}
+#phasespacer br {
+display : none;
+}
+#fullenergydisp {
+background-image : url(red_images/button2.png) !important ;
+background-color : #ccc !important ;
+border : #999 solid 1px !important ;
+
+overflow : hidden;
+}
+#curenergy {
+background-color : transparent !important ;
+border : #eee solid 0 !important ;
+
+overflow : hidden;
+height : 11px !important ;
+margin-left : 1px;
+margin-top : 1px;
+}
+#phasetext {
+color : #000000;
+}
+/* Schnellangriff button */
+	a[href*="attacknpcmenu&"]		{ font-size: 16; }
+	a[href*="take&"]		{ font-size: 16; }
+	a[href*="attacknpc&"]		{ font-size: 0; }
+	a[href*="attacknpc&"]:before	{ content: url(red_images/angriff.png); }
+	a[href*="&action=attacknpc"]		{ font-size: 0; }
+	a[href*="&action=attacknpc"]:before	{ content: url(red_images/angriff.png); }
+/* Verjagen button */
+
+.fastchase {
+	font-size: 0;
+	content: url(red_images/verjagen.png);
+}
+
+/* Einstellungen */
+	a[href*="profil.php?action=skip"]:before 	{ content: url(red_images/check.png); padding-right: 2px; }
+	a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
+	a[href*="profil.php?action=show"]:before 	{ content: url(red_images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
+	a[href*="profil.php?action=enable"]:before 	{ content: url(red_images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
+	form > input[name=ownstyle] 			{ width: 100%; }
+
+/* Item-/Gelduebergabe */
+	.frameitembg a[href*="item.php?action=transfer2"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+	.frameitembg a[href*="item.php?action=moneytransfer3"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+
+
+/*unsichtbare freunde online kommentar tabele*/
+
+
+table.friendlist a[href="#"] {
+position : relative;
+}
+
+.friendlist a[href="#"][onclick*="tt(event,"]:after {
+padding-left: 50px;
+content : attr(title);
+position : absolute;
+left : 435px;
+right : 5px;
+display : inline-block;
+border : #69441D solid 1px;
+border-bottom : 0;
+background-image : none;
+background-color: #200000;
+padding : 1px;
+color : #C2772E;
+height : 16px;
+overflow : hidden;
+visibility : visible;
+width : 400px;
+}
+.friendlist tr:first-of-type a[href="#"][onclick^="tt"]:after {
+border-top-left-radius : 4px;
+border-top-right-radius : 4px;
+}
+.friendlist tr:last-of-type a[href="#"][onclick^="tt"]:after {
+border-bottom-left-radius : 4px;
+border-bottom-right-radius : 4px;
+border-bottom : 1px solid #ccc;
+height : 16px;
+}
+.friendlist a[href="#"][onclick*="tt(event,"][title="Kommentar verfassen"]:after {
+content : "Kein Kommentar festgelegt...";
+color : #bbb;
+font-style : italic;
+}
+/*unsichtbare freunde offline kommentar tabele*/
+.friendlist + br + p + .friendlist a[href="#"][onclick*="tt(event,"]:after {
+left : 482px;
+visibility : visible;
+width : 400px;
+}
+/*Sponsormenü*/
+.bg1 {background-color: #400000 !important; border: 1px solid #C85424;}
+.bg2 {background-color: #200000 !important;border: 1px solid #C85424;}
+
+
+
+/* Rassen der Clanmitglieder im Clanmenu */
+
+#ItemFrameClanmenu .listrow[title]:after { content: attr(title); display: block; font-weight: lighter; font-size: var(--font9); color: #FFE1E1}
+
+/* Notruf rechtsbündig   Nicht optimal gelöst */
+#ItemFrameClanmenu a[href="clanmenu.php?action=sos"] {display: block; font-weight: bold; text-align: right;}
+#ItemFrameClanmenu a[href="clanmenu.php?action=sos"]{color:#c00}
+#ItemFrameClanmenu a[href="clanmenu.php?action=train_member"]{color:#393}
+
+/* Worldsay #1DAF57 */
+
+   /* Grün*/
+.worldsay, .worldsay table, .worldsay tbody, .worldsay table td {font-size : 11px;font-weight : bold;}
+.worldsay table, .worldsay tbody {border-collapse : separate;}
+.worldsay tr[bgcolor="#99EE99"] {background-color : transparent !important ;color : #000 !important ;font-weight : bold;}
+.worldsay tr[bgcolor="#99EE99"] td {background-color : #1DAF57 !important ;color : #000 !important ;border-radius : 4px;font-weight : bold;}
+   /* Blau */
+.worldsay tr[bgcolor="#C1CEF9"] {background-color : transparent !important ;color : #d99 !important ;font-weight : bold;}
+.worldsay tr[bgcolor="#C1CEF9"] td {background-color : #0774B9 !important ;color : #00DFE2 !important ;border-radius : 4px;font-weight : bold;}
+   /* Pink */
+.worldsay tr[bgcolor="#FFAEA1"] {background-color : transparent !important ;color : #000 !important ;font-weight : bold;}
+.worldsay tr[bgcolor="#FFAEA1"] td {background-color : #FF7761 !important ;color : #000 !important ;border-radius : 4px;font-weight : bold;}
+
+
+/* Spezialworldsays ausblenden */
+
+	/* Gelb */
+	p.worldsay table tr[bgcolor="#C0C000"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#C0C000"] td	{ display:none; }
+
+	/* Pink */
+	/* p.worldsay table tr[bgcolor="#FFAEA1"] 		{ display:none; } */
+	/* p.worldsay table tr[bgcolor="#FFAEA1"] td 	{ display:none; } */
+
+	/* Orange */
+	p.worldsay table tr[bgcolor="#F8A370"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#F8A370"] td 	{ display:none; }
+
+/* Inventar-Platzschaffende Änderungen */
+	p.listcaption + p.listrow .small b + b 		{ margin: 0 0 0 -6px; }
+	p.listcaption + p.listrow .small b + b:before 	{
+	content: " | ";
+	background: #200000;
+}
+	img[src*="item_divider.gif"]		{ display: none; }
+
+	.valueincreased 				{color:#008000; font-size: smaller;}
+
+/* Fastspells */
+#fastspell {
+	border-left: 0;
+	border-right: 0;
+	color: #3D0001;
+	width: 100%;
+	font-size: var(--font13);
+	height: 18px;
+	line-height: 18px;
+	text-shadow: 0 2px 1px rgba(0,0,0,.2);
+	height: 22px;
+	background: #3D0001;
+	box-shadow: 0px 0px 1px #000000;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #200000;
+	margin-bottom: 3px;
+}
+
+a.fast_spell_set, span.fast_spell_set {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 2px;
+	width: 16px;
+	height: 16px;
+	background: #621314;
+	text-align: center;
+	font-size: var(--font11);
+	line-height: 16px;
+	margin-left:2px;
+	margin-right:2px;
+	position: relative;
+	top: 3px;
+}
+.fast_spell_set {
+  color: #00DD00;
+  }
+#fastspell tr > td + td > b {
+    color: transparent;
+    font-size: 0;
+}
+
+/* Fastspells */
+
+#fastspell1,#fastspell3,#fastspell5,#fastspell7,#fastspell9 {background: #3D0001;;
+padding-top:1px; padding-bottom: 1px; white-space: nowrap;  }
+#fastspell2,#fastspell4,#fastspell6,#fastspell8 {padding-top:1px; padding-bottom: 1px; white-space: nowrap;}
+#fastspell1:hover,#fastspell2:hover,#fastspell3:hover,#fastspell4:hover,#fastspell5:hover,#fastspell6:hover,#fastspell7:hover,#fastspell8:hover,#fastspell9:hover {
+  background: #510001 !important;
+  position: relative;  }
+
+.frameitembg 					{
+	margin: 10px;
+	margin-top: 1px;
+	background-color: #200000;
+	}
+.frameitembg img[src$="item_divider.gif"] 	{margin-top: -5px;height: 9px;}
+
+/*Bilder verkleinern (Vote/Brief/Sieg/Niederlage) */
+	img[src$="brief.jpg"] 						{width: 100px; }
+	img[src$="sieg.jpg"] 						{ width: 50px; }
+	img[src$="niederlage.jpg"] 					{ width: 50px; }
+	img[src="http://www.gamessphere.de/img/graphics/vote.gif"] 	{width: 25px;}
+	img[src="http://www.freewar.de/images/vote.gif"] 		{width: 25px !important; }
+
+/*Cursor Fix*/
+	*[onclick] 		{ cursor: pointer; }
+
+/*Texteingabe größer: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel...*/
+	.frameitembg textarea 	{ width: 100%; height: 50%;}
+	.framemainbg textarea	{ width: 100% !important; height: 70% !important; }
+
+/*Sponsorsterne*/
+	img[src$="sponsor.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor2.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor3.gif"]	{ margin-right: 1px; }
+
+/* Lebenspunkte */
+#listrow_lifep .healthok { font-weight: bold; color: #009800; font-size: var(--font15); }
+#listrow_lifep .healthmed { color: #FF8000; font-weight: bold; font-size: var(--font15); }
+#listrow_lifep .healthcritical { color: #F00000; font-weight: bold; font-size: var(--font15); }
+
+/* inv fix */
+.frameitembg{
+ overflow-x: hidden;
+ }
+
+.tutorial {
+  border:1px solid #ccc !important;background-color:#862C2C !important;
+  -moz-border-radius:8px !important;
+  -webkit-border-radius:8px !important;border-radius:8px !important;color:#862C2C
+}
+.tutorial legend {
+  border:1px solid #ccc !important;background-color:#862C2C !important;
+  -moz-border-radius:3px !important;-webkit-border-radius:3px !important;border-radius:3px !important;color:#FF4343;padding:2px
+}
+
+/* erweiterungen */
+#toplp{background-color:transparent!important;border:none!important}
+
+/* Inventarveränderungen (CID)*/
+
+	p.listitemrow 			                            { position: relative; padding: 2px 4px 3px 4px; font-size: 1px; color: transparent; border: 1px solid #BABABA; }
+	p.listitemrow:hover 						        { padding: 2px 65px 3px 4px; }
+	p.listitemrow + p 						            { margin-top: 3px; }
+    p.listitemrow {font-size:0;white-space:nowrap;position:relative;} /* padding:2px 0;*/
+	p.listitemrow b 						            { font-size: var(--font11); color: FFE1E1; }
+    .itemamount                                         {font-size: var(--font11);color:#FF6A00!important;display:inline-block;font-weight:bold}
+	.itemmagic 							                { font-size: var(--font11); margin-left: 1px; }
+	.itemequipped b 						            { color: #D20000 !important; }
+	p.listitemrow .iteminventorypics 				    { max-height: 14px; opacity: 1; }
+	p.listitemrow .iteminventorypics:hover 				{ opacity: 1.00; }
+	p.listitemrow img[src$="icon_transfer.gif"] 		{ display: none; }
+	p.listitemrow img[src$="icon_drop.gif"] 			{ display: none; }
+	p.listitemrow img[src$="icon_view.gif"] 			{ display: none; }
+
+
+	.listitemrow:not(#filterrow) a[href^="item.php?action=repairweapon"]:after{display:inline-block;content:'';height:20;width:84%;position:absolute;bottom:-3;left:83}
+	
+    .listitemrow:not(#filterrow) a[href^="item.php?action=activate"]:after{display:inline-block;content:'';height:12px;width:300px;position:absolute;top:0;left:0}
+    .listitemrow:not(#filterrow):hover b{color:#f60!important}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=watch"]:after{padding-right:0;margin-bottom:1px;position:absolute;right:32px;content: url("red_images/icon_view.gif");top:4px;opacity:.2}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=watch"]:hover:after{content: url("red_images/icon_view.gif");top:4px;opacity:1}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=transfer1"]:after{padding-right:0;position:absolute;right:16px;content: url("red_images/icon_transfer.gif");top:1px;opacity:.2}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=transfer1"]:hover:after{content: url("red_images/icon_transfer.gif");top:1px;opacity:1}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=manytransfer1"]:after{padding-right:0;position:absolute;right:16px;content: url("red_images/icon_transfer.gif");top:1px;opacity:.2}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=manytransfer1"]:hover:after{content: url("red_images/icon_transfer.gif");top:1px;opacity:1}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=manydrop"]:after{padding-right:0;position:absolute;right:1px;content: url("red_images/icon_drop.gif");top:1px;opacity:.2}
+
+    .listitemrow:not(#filterrow) a[href^="item.php?action=manydrop"]:hover:after{content: url("red_images/icon_drop.gif");top:1px;opacity:1}
+	p.listitemrow span.medium 					        { font-size: 1px; color: transparent; }
+	p.listitemrow span.medium a 					    { font-size: 1px; color: #FF0000; display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	#filterrow 							                { padding: 2px; }
+	#filterrow b 							            { font-size: var(--font10); }
+	#filterrow:before 						            { color: #5E5E5E; }
+
+/* Aka Anzeige */
+#listrow_aka_battlep, #listrow_aka_battlep span.small {font-size : var(--font9);text-align : center; }
+
+/* Waffenanzeige */
+#listrow_neck { white-space: nowrap; overflow: hidden; text-overflow: clip;}
+#listrow_attackw { white-space: nowrap; overflow: hidden; text-overflow: clip;}
+#listrow_defensew { white-space: nowrap; overflow: hidden; text-overflow: clip;}
+#listrow_attackw>b>a,#listrow_defensew>b>a{font-size:0;}
+#listrow_ring>b {font-size:8;}
+
+
+#listrow_attackw>b>a:before{content:"A-Waffe"; font-size: var(--font11); }
+#listrow_defensew>b>a:before{content:"V-Waffe"; font-size: var(--font11); }
+#listrow_attackw>b>a:after{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; direction: rtl; position: relative;}
+#listrow_defensew>b>a:after{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; direction: rtl; position: relative;}
+
+/* Runenpuzzle mit Zahlen statt Bildern */
+
+	img[src$="minigame/a1.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/1.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a2.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/2.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a3.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/3.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a4.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/4.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a5.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/5.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a6.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(red_images/Runenpuzzel/6.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+
+/* Schwarze Felder UK */
+.blkjpg {
+	background-image:url(images/map/uk.png)!important;
+}
+.ukbar.editcaption {
+background-color: #200000;
+}
+.ukbar.visitcaption  {
+background-color: #200000;
+}
+/*  Options Menü unter Karte */
+.framemenubg{font-size:1px;background:url(red_images/menubg.png);color:transparent;}
+text {
+    fill: Orange;
+}
+rect {
+	stroke: #cccccc;
+}
+.chattextsynergieinspiration {font-style: italic;}
+/* end style base */
+
+.hidden1000sep { display: inline!important }
+
+/* ########## SAVE ########## */
+
+.framemapbg td#mapx-53y-76:before,.framemapbg td#mapx-50y-76:before,.framemapbg td#mapx-49y-75:before,.framemapbg td#mapx-55y-73:before,.framemapbg td#mapx36y96:before,.framemapbg td#mapx44y96:before,.framemapbg td#mapx84y100:before,.framemapbg td#mapx89y101:before,.framemapbg td#mapx89y104:before,.framemapbg td#mapx88y105:before,.framemapbg td#mapx186y136:before,.framemapbg td#mapx184y139:before,.framemapbg td#mapx187y139:before,.framemapbg td#mapx185y140:before,.framemapbg td#mapx86y85:before,.framemapbg td#mapx87y87:before,.framemapbg td#mapx85y90:before,.framemapbg td#mapx65y90:before,.framemapbg td#mapx66y90:before,.framemapbg td#mapx68y94:before,.framemapbg td#mapx119y122:before,.framemapbg td#mapx56y100:before,.framemapbg td#mapx804y806:before,.framemapbg td#mapx100y88:before,.framemapbg td#mapx109y91:before,.framemapbg td#mapx107y93:before,.framemapbg td#mapx100y94:before,.framemapbg td#mapx104y94:before,.framemapbg td#mapx106y95:before,.framemapbg td#mapx97y96:before,.framemapbg td#mapx-19999y-19999:before,.framemapbg td#mapx-19998y-19999:before,.framemapbg td#mapx-19997y-19999:before,.framemapbg td#mapx-19999y-19998:before,.framemapbg td#mapx-19998y-19998:before,.framemapbg td#mapx-19997y-19998:before,.framemapbg td#mapx-19999y-19997:before,.framemapbg td#mapx-19998y-19997:before,.framemapbg td#mapx-19997y-19997:before,.framemapbg td#mapx-19998y-19996:before,.framemapbg td#mapx-19993y-19999:before,.framemapbg td#mapx-19994y-19998:before,.framemapbg td#mapx-19993y-19998:before,.framemapbg td#mapx-19992y-19998:before,.framemapbg td#mapx-19991y-19998:before,.framemapbg td#mapx-19992y-19997:before,.framemapbg td#mapx78y97:before,.framemapbg td#mapx76y98:before,.framemapbg td#mapx80y99:before,.framemapbg td#mapx74y101:before,.framemapbg td#mapx77y101:before,.framemapbg td#mapx76y103:before,.framemapbg td#mapx76y104:before,.framemapbg td#mapx-827y-919:before,.framemapbg td#mapx-471y-473:before,.framemapbg td#mapx-470y-473:before,.framemapbg td#mapx-469y-473:before,.framemapbg td#mapx-467y-473:before,.framemapbg td#mapx-471y-472:before,.framemapbg td#mapx-470y-472:before,.framemapbg td#mapx-469y-472:before,.framemapbg td#mapx-467y-472:before,.framemapbg td#mapx-471y-471:before,.framemapbg td#mapx-470y-471:before,.framemapbg td#mapx-469y-471:before,.framemapbg td#mapx-468y-471:before,.framemapbg td#mapx-467y-471:before,.framemapbg td#mapx-466y-471:before,.framemapbg td#mapx-470y-470:before,.framemapbg td#mapx-490y-492:before,.framemapbg td#mapx-489y-492:before,.framemapbg td#mapx-491y-491:before,.framemapbg td#mapx-490y-491:before,.framemapbg td#mapx-489y-491:before,.framemapbg td#mapx-490y-490:before,.framemapbg td#mapx90y88:before,.framemapbg td#mapx88y89:before,.framemapbg td#mapx88y118:before,.framemapbg td#mapx89y89:before,.framemapbg td#mapx92y89:before,.framemapbg td#mapx87y90:before,.framemapbg td#mapx92y92:before,.framemapbg td#mapx89y93:before,.framemapbg td#mapx-1299y-1399:before,.framemapbg td#mapx-1298y-1399:before,.framemapbg td#mapx-1294y-1393:before,.framemapbg td#mapx71y101:before,.framemapbg td#mapx70y102:before,.framemapbg td#mapx-500y-502:before,.framemapbg td#mapx-499y-502:before,.framemapbg td#mapx-500y-501:before,.framemapbg td#mapx-500y-500:before,.framemapbg td#mapx-100y-95:before,.framemapbg td#mapx-10001y-10011:before,.framemapbg td#mapx93y113:before,.framemapbg td#mapx66y85:before,.framemapbg td#mapx96y99:before,.framemapbg td#mapx97y99:before,.framemapbg td#mapx100y100:before,.framemapbg td#mapx96y101:before,.framemapbg td#mapx97y101:before,.framemapbg td#mapx98y101:before,.framemapbg td#mapx96y102:before,.framemapbg td#mapx97y102:before,.framemapbg td#mapx98y102:before,.framemapbg td#mapx101y102:before,.framemapbg td#mapx99y103:before,.framemapbg td#mapx58y106:before,.framemapbg td#mapx114y98:before,.framemapbg td#mapx117y100:before,.framemapbg td#mapx116y101:before,.framemapbg td#mapx117y106:before,.framemapbg td#mapx117y107:before,.framemapbg td#mapx117y113:before,.framemapbg td#mapx120y115:before,.framemapbg td#mapx51y73:before,.framemapbg td#mapx51y75:before,.framemapbg td#mapx52y75:before,.framemapbg td#mapx54y75:before,.framemapbg td#mapx56y75:before,.framemapbg td#mapx44y76:before,.framemapbg td#mapx53y76:before,.framemapbg td#mapx54y76:before,.framemapbg td#mapx55y76:before,.framemapbg td#mapx53y77:before,.framemapbg td#mapx54y77:before,.framemapbg td#mapx49y83:before,.framemapbg td#mapx66y119:before,.framemapbg td#mapx70y121:before,.framemapbg td#mapx96y84:before,.framemapbg td#mapx92y87:before,.framemapbg td#mapx84y112:before,.framemapbg td#mapx87y112:before,.framemapbg td#mapx86y113:before,.framemapbg td#mapx81y114:before,.framemapbg td#mapx82y114:before,.framemapbg td#mapx75y115:before,.framemapbg td#mapx76y115:before,.framemapbg td#mapx78y115:before,.framemapbg td#mapx79y115:before,.framemapbg td#mapx80y115:before,.framemapbg td#mapx81y115:before,.framemapbg td#mapx82y115:before,.framemapbg td#mapx83y115:before,.framemapbg td#mapx84y115:before,.framemapbg td#mapx85y115:before,.framemapbg td#mapx75y116:before,.framemapbg td#mapx76y116:before,.framemapbg td#mapx77y116:before,.framemapbg td#mapx78y116:before,.framemapbg td#mapx79y116:before,.framemapbg td#mapx80y116:before,.framemapbg td#mapx81y116:before,.framemapbg td#mapx82y116:before,.framemapbg td#mapx83y116:before,.framemapbg td#mapx84y116:before,.framemapbg td#mapx85y116:before,.framemapbg td#mapx86y116:before,.framemapbg td#mapx79y117:before,.framemapbg td#mapx80y117:before,.framemapbg td#mapx81y117:before,.framemapbg td#mapx82y117:before,.framemapbg td#mapx83y117:before,.framemapbg td#mapx84y117:before,.framemapbg td#mapx85y117:before,.framemapbg td#mapx80y118:before,.framemapbg td#mapx81y118:before,.framemapbg td#mapx83y118:before,.framemapbg td#mapx80y119:before,.framemapbg td#mapx103y115:before,.framemapbg td#mapx101y116:before,.framemapbg td#mapx96y117:before,.framemapbg td#mapx101y117:before,.framemapbg td#mapx103y117:before,.framemapbg td#mapx99y118:before,.framemapbg td#mapx101y119:before,.framemapbg td#mapx98y120:before,.framemapbg td#mapx501y54:before,.framemapbg td#mapx507y57:before,.framemapbg td#mapx508y57:before,.framemapbg td#mapx104y104:before,.framemapbg td#mapx106y106:before,.framemapbg td#mapx113y106:before,.framemapbg td#mapx126y85:before,.framemapbg td#mapx127y85:before,.framemapbg td#mapx100y107:before,.framemapbg td#mapx105y111:before,.framemapbg td#mapx109y111:before,.framemapbg td#mapx110y111:before,.framemapbg td#mapx-105y-95:before,.framemapbg td#mapx108y113:before,.framemapbg td#mapx114y114:before,.framemapbg td#mapx110y115:before,.framemapbg td#mapx76y110:before,.framemapbg td#mapx79y110:before,.framemapbg td#mapx96y106:before,.framemapbg td#mapx95y108:before,.framemapbg td#mapx96y110:before,.framemapbg td#mapx94y111:before,.framemapbg td#mapx98y111:before,.framemapbg td#mapx95y112:before,.framemapbg td#mapx-90y-90:before,.framemapbg td#mapx72y107:before,.framemapbg td#mapx74y107:before,.framemapbg td#mapx71y90:before,.framemapbg td#mapx73y90:before,.framemapbg td#mapx75y90:before,.framemapbg td#mapx78y93:before,.framemapbg td#mapx68y109:before,.framemapbg td#mapx65y112:before,.framemapbg td#mapx68y116:before,.framemapbg td#mapx69y116:before,.framemapbg td#mapx-2359y-2359:before,.framemapbg td#mapx122y91:before,.framemapbg td#mapx115y94:before,.framemapbg td#mapx111y96:before,.framemapbg td#mapx77y85:before,.framemapbg td#mapx-286y-472:before,.framemapbg td#mapx82y92:before,.framemapbg td#mapx92y99:before,.framemapbg td#mapx94y100:before,.framemapbg td#mapx93y101:before,.framemapbg td#mapx91y104:before,.framemapbg td#mapx95y104:before,.framemapbg td#mapx92y105:before,.framemapbg td#mapx111y82:before,.framemapbg td#mapx110y83:before,.framemapbg td#mapx111y83:before,.framemapbg td#mapx112y83:before,.framemapbg td#mapx-448y-446:before,.framemapbg td#mapx100y105:before,.framemapbg td#mapx100y104:before,.framemapbg td#mapx79y114:before,.framemapbg td#mapx85y118:before,.framemapbg td#mapx104y131:before,.framemapbg td#mapx103y132:before,.framemapbg td#mapx104y132:before,.framemapbg td#mapx105y132:before,.framemapbg td#mapx101y133:before,.framemapbg td#mapx102y133:before,.framemapbg td#mapx103y133:before,.framemapbg td#mapx104y133:before,.framemapbg td#mapx105y133:before,.framemapbg td#mapx106y133:before,.framemapbg td#mapx107y133:before,.framemapbg td#mapx101y134:before,.framemapbg td#mapx102y134:before,.framemapbg td#mapx103y134:before,.framemapbg td#mapx104y134:before,.framemapbg td#mapx105y134:before,.framemapbg td#mapx106y134:before,.framemapbg td#mapx107y134:before,.framemapbg td#mapx108y134:before,.framemapbg td#mapx100y135:before,.framemapbg td#mapx102y135:before,.framemapbg td#mapx101y135:before,.framemapbg td#mapx102y135:before,.framemapbg td#mapx103y135:before,.framemapbg td#mapx104y135:before,.framemapbg td#mapx105y135:before,.framemapbg td#mapx106y135:before,.framemapbg td#mapx102y136:before,.framemapbg td#mapx103y136:before,.framemapbg td#mapx104y136:before,.framemapbg td#mapx116y134:before,.framemapbg td#mapx114y135:before,.framemapbg td#mapx79y118:before,.framemapbg td#mapx-49004y-49002:before,.framemapbg td#mapx-49003y-49002:before,.framemapbg td#mapx-49003y-49001:before,.framemapbg td#mapx-49002y-49001:before,.framemapbg td#mapx-49001y-49001:before,.framemapbg td#mapx-49001y-49002:before,.framemapbg td#mapx-49002y-49002:before,.framemapbg td#mapx-49003y-49003:before,.framemapbg td#mapx-49002y-49003:before,.framemapbg td#mapx-49001y-49003:before,.framemapbg td#mapx-49000y-49003:before,.framemapbg td#mapx-49001y-49004:before,.framemapbg td#mapx-49001y-49005:before,.framemapbg td#mapx-49002y-49004:before { position:absolute;left:0;right:0;top:0;bottom:0;opacity:.8;content:url('images/save.png') }
+/* Elufia */
+.framemapbg td#mapx-11y-75:before { position:absolute;left:0;right:0;top:0;bottom:0;opacity:.8;content:url('images/save.png') }
+
+.frameitembg select[name="z_pos_id"] option[value="73"]{font-weight:bold; color: #009900;}
+.frameitembg select[name="z_pos_id"] option[value="1079"]{font-weight:bold; color: #009900;}
+
+img[src="../images/map/bank.jpg"] { border: 1px solid #009900; border-radius: 5px; }
+img[src="../images/map/casino2.jpg"] { border: 1px solid #009900; border-radius: 5px; }
+
+/* ########## AGGRO ########## */
+
+/* > > A: 3 */
+.framemapbg td#mapx-508y-376:before,.framemapbg td#mapx-426y-298:before,.framemapbg td#mapx-428y-297:before,.framemapbg td#mapx-427y-297:before,.framemapbg td#mapx-425y-297:before,.framemapbg td#mapx-427y-296:before,.framemapbg td#mapx-426y-296:before { content: "3"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 5 */
+.framemapbg td#mapx-10001y-10004:before,.framemapbg td#mapx-645y-144:before { content: "5"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 9 */
+.framemapbg td#mapx-827y-914:before,.framemapbg td#mapx-826y-912:before,.framemapbg td#mapx-823y-912:before,.framemapbg td#mapx-825y-911:before,.framemapbg td#mapx-822y-910:before,.framemapbg td#mapx-826y-908:before,.framemapbg td#mapx-823y-906:before,.framemapbg td#mapx-824y-905:before,.framemapbg td#mapx-826y-904:before,.framemapbg td#mapx-823y-903:before { content: "9"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 10 - 2630 */
+.framemapbg td#mapx-826y-916:before,.framemapbg td#mapx-825y-914:before,.framemapbg td#mapx-827y-913:before,.framemapbg td#mapx-825y-912:before,.framemapbg td#mapx-825y-910:before,.framemapbg td#mapx-827y-909:before,.framemapbg td#mapx-823y-908:before,.framemapbg td#mapx-823y-905:before,.framemapbg td#mapx-826y-903:before,.framemapbg td#mapx-230y-538:before { content: "10-2630"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 12 */
+.framemapbg td#mapx-348y-699:before,.framemapbg td#mapx-347y-699:before,.framemapbg td#mapx-349y-698:before,.framemapbg td#mapx-348y-698:before,.framemapbg td#mapx-347y-698:before,.framemapbg td#mapx-349y-697:before,.framemapbg td#mapx-348y-697:before,.framemapbg td#mapx-347y-697:before,.framemapbg td#mapx-346y-697:before,.framemapbg td#mapx-348y-696:before,.framemapbg td#mapx-347y-696:before,.framemapbg td#mapx-346y-696:before,.framemapbg td#mapx-348y-695:before,.framemapbg td#mapx-347y-695:before,.framemapbg td#mapx-346y-695:before,.framemapbg td#mapx-345y-695:before,.framemapbg td#mapx-348y-694:before,.framemapbg td#mapx-347y-694:before,.framemapbg td#mapx-346y-694:before,.framemapbg td#mapx-345y-694:before,.framemapbg td#mapx-348y-693:before,.framemapbg td#mapx-347y-693:before,.framemapbg td#mapx-346y-693:before,.framemapbg td#mapx-345y-693:before { content: "12"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 15 */
+.framemapbg td#mapx-508y-377:before,.framemapbg td#mapx-509y-376:before { content: "15"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 25 */
+.framemapbg td#mapx-226y-540:before,.framemapbg td#mapx-228y-539:before,.framemapbg td#mapx-224y-539:before,.framemapbg td#mapx-229y-538:before,.framemapbg td#mapx-227y-538:before,.framemapbg td#mapx-225y-538:before { content: "25"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 25 / 710 */
+.framemapbg td#mapx-224y-541:before { content: "25-710"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 29 */
+.framemapbg td#mapx-198y-298:before,.framemapbg td#mapx-197y-298:before,.framemapbg td#mapx-196y-297:before,.framemapbg td#mapx-200y-299:before { content: "29"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 34 */
+.framemapbg td#mapx-605y-267:before,.framemapbg td#mapx-608y-266:before,.framemapbg td#mapx-607y-266:before,.framemapbg td#mapx-606y-266:before,.framemapbg td#mapx-605y-266:before,.framemapbg td#mapx-604y-265:before,.framemapbg td#mapx-610y-264:before,.framemapbg td#mapx-602y-264:before,.framemapbg td#mapx-601y-263:before,.framemapbg td#mapx-613y-262:before,.framemapbg td#mapx-611y-262:before,.framemapbg td#mapx-609y-262:before,.framemapbg td#mapx-607y-262:before,.framemapbg td#mapx-600y-262:before,.framemapbg td#mapx-606y-261:before,.framemapbg td#mapx-605y-260:before,.framemapbg td#mapx-601y-260:before { content: "34"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 35 */
+.framemapbg td#mapx-428y-298:before,.framemapbg td#mapx-424y-298:before,.framemapbg td#mapx-426y-297:before,.framemapbg td#mapx-425y-296:before { content: "35"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 50 */
+.framemapbg td#mapx-645y-148:before,.framemapbg td#mapx-643y-148:before,.framemapbg td#mapx-647y-145:before,.framemapbg td#mapx-647y-143:before,.framemapbg td#mapx-236y-388:before,.framemapbg td#mapx-236y-385:before,.framemapbg td#mapx-238y-387:before,.framemapbg td#mapx-238y-386:before,.framemapbg td#mapx-236y-384:before { content: "50"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 70 */
+.framemapbg td#mapx-201y-200:before,.framemapbg td#mapx-200y-199:before { content: "70"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   } 
+
+/* > > A: 73 */
+.framemapbg td#mapx-167y-857:before,.framemapbg td#mapx-163y-857:before,.framemapbg td#mapx-163y-856:before,.framemapbg td#mapx-165y-855:before { content: "73"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 80 */
+.framemapbg td#mapx-232y-386:before,.framemapbg td#mapx-234y-386:before,.framemapbg td#mapx-235y-385:before,.framemapbg td#mapx-235y-386:before,.framemapbg td#mapx-236y-387:before,.framemapbg td#mapx-236y-386:before { content: "80"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 186 */
+.framemapbg td#mapx-805y-282:before { content: "186"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 271 */
+.framemapbg td#mapx-826y-918:before,.framemapbg td#mapx-825y-915:before,.framemapbg td#mapx-826y-914:before,.framemapbg td#mapx-826y-911:before,.framemapbg td#mapx-827y-910:before,.framemapbg td#mapx-825y-909:before,.framemapbg td#mapx-822y-909:before,.framemapbg td#mapx-825y-904:before { content: "271"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 465 */
+.framemapbg td#mapx-738y-230:before,.framemapbg td#mapx-736y-230:before,.framemapbg td#mapx-738y-229:before,.framemapbg td#mapx-737y-229:before,.framemapbg td#mapx-736y-229:before,.framemapbg td#mapx-740y-228:before,.framemapbg td#mapx-739y-228:before,.framemapbg td#mapx-737y-228:before,.framemapbg td#mapx-736y-227:before { content: "465"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 666 */
+.framemapbg td#mapx-199y-829:before,.framemapbg td#mapx-199y-828:before,.framemapbg td#mapx-198y-828:before,.framemapbg td#mapx-199y-827:before { content: "666"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 710 */
+.framemapbg td#mapx-225y-541:before { content: "710"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 800 */
+.framemapbg td#mapx-200y-201:before,.framemapbg td#mapx-202y-199:before { content: "800"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 1040 / 35 */
+.framemapbg td#mapx-426y-299:before { content: "1040"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 1600 */
+.framemapbg td#mapx-846y-379:before,.framemapbg td#mapx-849y-378:before,.framemapbg td#mapx-843y-377:before,.framemapbg td#mapx-842y-377:before,.framemapbg td#mapx-845y-376:before,.framemapbg td#mapx-840y-376:before,.framemapbg td#mapx-848y-374:before,.framemapbg td#mapx-844y-374:before { content: "1600"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 1630 */
+.framemapbg td#mapx-223y-541:before,.framemapbg td#mapx-225y-540:before { content: "1630"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 1674 */
+.framemapbg td#mapx-237y-387:before { content: "1674"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 2710 */
+.framemapbg td#mapx-821y-910:before { content: "2710"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 4200 */
+.framemapbg td#mapx-844y-377:before { content: "4200"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+/* > > A: 5300 */
+.framemapbg td#mapx-845y-375:before { content: "5300"; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+/* > > R.I.P. */
+.framemapbg td#mapx-228y-537:before { content: "R.I.P."; z-index: 2; width: 50px; position: absolute; right: 0px; top: 0px; line-height: 120%; font-family: Arial Narrow, Arial, sans-serif; font-size: 14px; font-weight: bold; text-align: right; color: #FF0000;   }
+
+
+
+/* ########## ANPC ########## */
+
+ /* GZK Mentoran farblich hervorheben */
+.frameitembg select[name="z_pos_id"] option[value="290"]{font-weight:bold; color: #FF9900;}
+img[src="../images/map/oase.jpg"] { border: 1px solid #FF9900; border-radius: 5px;}
+
+
+/* Auftrags NPCs auf der Karte*/
+
+.framemapbg table td { position: relative; }
+
+	/* Ruward - Onloskelette */
+#mapx70y105 a:after, #mapx70y108 a:after, #mapx70y108 a:after, #mapx71y105 a:after, #mapx71y107 a:after, #mapx72y106 a:after, #mapx73y105 a:after, #mapx73y106 a:after, #mapx74y104 a:after  { content: "Onlo"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #666666; opacity: 0.60; }
+
+	/* Lardikia - Blattalisken */	 
+#mapx119y111 a:after, #mapx119y114 a:after, #mapx119y115 a:after, #mapx120y111 a:after, #mapx120y114 a:after, #mapx121y111 a:after, #mapx121y114 a:after, #mapx121y115 a:after { content: "Blattalisk"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.60; }
+
+	/* Buran - untote Bürger */
+#mapx82y87 a:after, #mapx-196y-96 a:after, #mapx81y89 a:after, #mapx82y90 a:after, #mapx80y87 a:after, #mapx81y88 a:after, #mapx84y88 a:after, #mapx-185y-94 a:after, #mapx-193y-98 a:after { content: "Bürger"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #666666; opacity: 0.60; }
+
+	/* Limm und Laree - Ektofrone */
+#mapx59y93 a:after, #mapx50y84 a:after, #mapx51y82 a:after, #mapx51y85 a:after, #mapx55y88 a:after, #mapx57y88 a:after, #mapx58y88 a:after, #mapx58y91 a:after, #mapx59y84 a:after, #mapx59y88 a:after, #mapx59y92 a:after, #mapx60y87 a:after, #mapx60y88 a:after, #mapx60y92 a:after { content: "Ektofron"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.60; }
+    
+        /*t-Falter - Lodradron*/
+#mapx109y76 a:after ,#mapx108y77 a:after ,#mapx111y77 a:after,#mapx112y79 a:after ,#mapx113y79 a:after ,#mapx116y79 a:after ,#mapx119y79 a:after ,#mapx115y80 a:after ,#mapx114y81 a:after ,#mapx-508y-375 a:after { content: "t-Falter"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*kröten - Itolos*/
+#mapx257y92 a:after ,#mapx259y92 a:after ,#mapx255y94 a:after ,#mapx257y94 a:after ,#mapx256y95 a:after ,#mapx258y95 a:after ,#mapx255y96 a:after { content: "Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*e-kröten - Itolos*/
+#mapx258y93 a:after ,#mapx261y93 a:after ,#mapx259y95 a:after ,#mapx254y96 a:after { content: "e-Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+/* wiesel */
+   #mapx1006y1002:hover a:after , #mapx1008y1002:hover a:after , #mapx1005y1003:hover a:after , #mapx1007y1003:hover a:after , #mapx1008y1003:hover a:after , #mapx1009y1003:hover a:after , #mapx1004y1004:hover a:after , #mapx1005y1004:hover a:after , #mapx1006y1004:hover a:after , #mapx1004y1005:hover a:after , #mapx1005y1005:hover a:after , #mapx1007y1005:hover a:after , #mapx1008y1005:hover a:after , #mapx1009y1005:hover a:after , #mapx1011y1005:hover a:after , #mapx1005y1006:hover a:after  { content: "Wiesel"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #999999; border-bottom: 1px solid #BABABA; opacity: 0.60; }
+    
+        /*strativar*/
+#mapx196y128 a:after ,#mapx197y128 a:after ,#mapx195y129 a:after ,#mapx188y131 a:after ,#mapx193y131 a:after ,#mapx194y132 a:after ,#mapx191y133 a:after ,#mapx193y135 a:after { content: "Strativar"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.60; }
+
+        /*undarons*/
+#mapx-429y-298 a:after ,#mapx-425y-298 a:after ,#mapx-428y-296 a:after ,#mapx102y121 a:after ,#mapx106y124 a:after ,#mapx103y125 a:after ,#mapx105y125 a:after ,#mapx103y126 a:after ,#mapx104y126 a:after ,#mapx103y127 a:after ,#mapx105y127 a:after ,#mapx106y127 a:after ,#mapx107y127 a:after ,#mapx103y128 a:after ,#mapx106y128 a:after ,#mapx51y90 a:after ,#mapx53y98 a:after ,#mapx53y103 a:after ,#mapx-429y-298 a:after ,#mapx-425y-298 a:after ,#mapx-428y-296 a:after ,#mapx51y80 a:after ,#mapx53y85 a:after ,#mapx126y86 a:after ,#mapx121y87 a:after ,#mapx122y87 a:after ,#mapx119y89 a:after { content: "Undaron";  z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.60;}
+
+	/* Glypra ausserhalb der Höhle */
+#mapx98y82 a:after ,#mapx98y77 a:after { content: "Glypra";  z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D2D200; background: #000000; border-bottom: 1px solid #BABABA; opacity: 0.60;}
+
+
+td.areadescription table b[onmouseover^='tt("alter Schuh"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("alter Tolloschein"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("altes Relikt"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Amulett der schwachen Beute"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Amulett der schwachen Feuersbrunst"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Amulett der schwachen Heilung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Amulett der schwachen Zeitkontrolle"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Amulett des geringen Schutzes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Anzug der Magie"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Besen"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Blassaugenfisch"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Blattrüstung"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("blauer Ring des Schutzes"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("blaues Igelherz"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("blaues Ingeriumtrinit"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Blindfisch"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Borstenpanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("bronzene Jerodar-Halskette"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Brot der Nomaden"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Buch der Angriffsenergie"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Buch der Gruppenheilung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Buch der Zauberkunst"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Buch des Ausgrabungswissens"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Dampfkanone"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Doppelaxt"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Dydromonia"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("dunkle Kontrolle"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("dunkler Sockel"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Eisenzange"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Eiskristall-Pulver"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Eisstachel"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("energetische Chaoslabor-Scheibe"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("energetischer Schutzzauber"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Erdbeben"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("faulige Birne"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Felsenwurmschild"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Fernheilzauber"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Fernschutzzauber"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Feuerball"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Feuerdiamant"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Feuerkolben"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Feueröl"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Feuerstab"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Feuriges Ornament"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("flammloser Kleisterschild"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Flasche Sumpfgas"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Furgorpilz"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("gelber Ring des Schutzes"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("gelbes Ingeriumsulferat"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Gelbpollenschleuder"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Gelbsäure"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("gewundener Draht"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Giftdolch der Händler"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Giftnadelkeule"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Gipfellöwenzahn"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("goldene Jerodar-Halskette"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("goldener Kuhdarm"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("goldenes Schmuckstück"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Goldflosse"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Goldkrebspanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Goldnugget"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Goldschwert"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Goldstaub"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("große Axt"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("großer Blumenstrauß"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("großer Heiltrank"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("großer Skorpionstachel"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Gruppenheilzauber"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Gussform"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Hasenfell"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Hautbrand"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Heilender Regen"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Heiße Lava"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Horn des Teidams"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Hörnchen des Teidam-Babys"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Ingerium"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("juwelenbesetzter Goldbarren"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kaktuspfeil"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Kampfunfähigkeitszauber"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kaputter Helm des Lichts"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kaputter Ring des Todes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kaputter roter Ring"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kern der Vernichtung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kern der Zähigkeit"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kleiner Blumenstrauß"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kleiner Bonsai-Laraf"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kleiner Holzschild"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kleiner Holzstock"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("kleiner Keil"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kralle der Dunkelheit"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kräuterpastille"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kristall der Heilung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kristall des Schmerzes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Kristallstab"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Krustenkäferpanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Langzahn"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Lavapanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("lebendes Wasser"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Lianenpeitsche"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Madenstachel"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("magische Eiskeule"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Messsender"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Nebelanemone"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Nebelkristall"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Nebelschwert"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Nolulawurzel"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Notizblock"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Nudelholz"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Pergament der goldenen Einladung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Phasentruhe von Belpharia"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Regenstab"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Ring des Todes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Ring des Vulkans"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("rostiges Schwert"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("rote Rose"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("rote Schnur"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("roter Felsedelstein"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Rubin"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Salzpanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sandkanone"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sandstab"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sandzange"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Savannengras"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schachtelmesserblatt"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schere"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schild der Vernichtung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schild von Narubia"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Schild von Pensal"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schlangengift"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schneegurke"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("schwache Lebenserweiterung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("schwacher Schutzzauber"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schwarzer Eiskristall"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Schwert des Lichts"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("seltsamer Trank"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Serum des Todes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sicht der Schwäche"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Siegel der Beute"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Silberfuchsfell"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("silberne Jerodar-Halskette"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sorus-Kapsel"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Speisekarte aus Blatenien"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Spitzhacke"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Sprengpockenkorn"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stab der Entgiftung"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Stab der Feuerbälle"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stab der fremden Gedanken"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stab der Gruppenheilung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stab der Innovation"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stab des Lichts"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stachel des Todes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stachelrüstung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stahlanzug-Vorderseite"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("starke Sicht des Lebens"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("starker Rückangriff']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Statue von Horikon"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Steinhuhn-Ei"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stein des Todes"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Stierhoden"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Staubschleifer-Ei"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Teidam-Fansticker"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("toter Blattalisk"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("toter Gewebewurm"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Trockenwurmpanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Trockenwurmteppich"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Tropfstein"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("unreines Ingerium"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("virenverseuchter Schleim"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Vulkanschwert"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Waldbodengoldblume"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("Waldschlurchpanzer"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Wasserbärenkralle"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Winddistel"']{color:var(--sellmaybe)}
+td.areadescription table b[onmouseover^='tt("weiße Rose"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("Zauber der Wiederherstellung"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("zerbrochene Jerodar-Halskette"']{color:var(--sellitem)}
+td.areadescription table b[onmouseover^='tt("zerfallener Sandring"']{color:var(--sellitem)}
+/* Fontsize */
+:root {
+  --font15: 15px;
+  --font14: 14px;
+  --font13: 13px;
+  --font12: 12px;
+  --font11: 11px;
+  --font10: 10px;
+  --font9: 9px;
+  --font8: 8px;
+}
+#test{text-align:center;font-size:11px}/* Spielerkreuz ändern */
+ img[src$="user.gif"] { z-index: 7; display: block; width: 0; background: url(https://www.zocker.eu/freewar/style/images/kreuz.png); no-repeat; padding-left: 50px; } 
+.maptable tr:nth-child(3) td:nth-child(3) svg.mapstate { display: none; }
+.maptable tr:nth-child(3) td:nth-child(3) a { background: url(https://www.zocker.eu/freewar/style/images/kreuz.png); display: block; height: 100%; } /* Charakterzustände */
+	p.listcaption + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p + p.listrow .valueincreased { display:inline-block; width:150px; }
+	p.listcaption + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p +p.listrow { overflow:hidden; white-space:nowrap; }
+	span[title^="Schutz ("]				{ font-size: 0; }
+	span[title^="Schutz ("]:before		{ content: url(images/z/schutz.png); }
+	span[title^="Schutz (2 Min"] 		{ font-size: 0; }
+	span[title^="Schutz (2 Min"]:before	{ content: url(images/z/lowschutz.gif); }
+	span[title^="Schutz (1 Min"] 		{ font-size: 0; }
+	span[title^="Schutz (1 Min"]:before 	{ content: url(images/z/lowschutz.gif); }
+	span[title^="Schutz (wenig"] 		{ font-size: 0; }
+	span[title^="Schutz (wenig"]:before	{ content: url(images/z/lowschutz.gif); }
+	span[title^="Beutezauber ("]			{ font-size: 0; }
+	span[title^="Beutezauber ("]:before	{ content: url(images/z/beute.png); }
+	span[title^="Kampfunfähig ("]		{ font-size: 0; }
+	span[title^="Kampfunfähig ("]:before	{ content: url(images/z/KU.png); }
+	span[title^="Heilkraft ("]			{ font-size: 0; }
+	span[title^="Heilkraft ("]:before	{ content: url(images/z/heilkraft.png); }
+	span[title^="Lebenspunkte +"]		{ font-size: 0; }
+	span[title^="Lebenspunkte +"]:before	{ content: url(images/z/lebenspunkte.png); }
+	span[title^="Lebenspunkte -"]		{ font-size: 0; }
+	span[title^="Lebenspunkte -"]:before	{ content: url(images/z/lebenminus.png); }
+	span[title^="Verräter ("]			{ font-size: 0; }
+	span[title^="Verräter ("]:before		{ content: url(images/z/verraeter.png); }
+	span[title^="Stärke +"]				{ font-size: 0; }
+	span[title^="Stärke +"]:before		{ content: url(images/z/stark.png); }
+	span[title^="Stärke +"][title$="(5 Minuten)"] 		{ font-size: 0; }
+	span[title^="Stärke +"][title$="(5 Minuten)"]:before	{ content: url(images/z/starklow.gif); }
+	span[title^="Stärke +"][title$="(4 Minuten)"] 		{ font-size: 0; }
+	span[title^="Stärke +"][title$="(4 Minuten)"]:before	{ content: url(images/z/starklow.gif); }
+    span[title^="Stärke +"][title$="(3 Minuten)"] 		{ font-size: 0; }
+	span[title^="Stärke +"][title$="(3 Minuten)"]:before	{ content: url(images/z/starklow.gif); }
+    span[title^="Stärke +"][title$="(2 Minuten)"] 		{ font-size: 0; }
+	span[title^="Stärke +"][title$="(2 Minuten)"]:before	{ content: url(images/z/starklow.gif); }
+    span[title^="Stärke +"][title$="(1 Minuten)"] 		{ font-size: 0; }
+	span[title^="Stärke +"][title$="(1 Minuten)"]:before	{ content: url(images/z/starklow.gif); }
+	span[title^="Stärke -"]				{ font-size: 0; }
+	span[title^="Stärke -"]:before		{ content: url(images/z/starkminus.png); }
+	span[title^="Vergiftung ("]			{ font-size: 0; }
+	span[title^="Vergiftung ("]:before	{ content: url(images/z/vergiftet.gif); }
+	span[title^="Überladen"]			{ font-size: 0; }
+	span[title^="Überladen"]:before		{ content: url(images/z/uberladen.png); }
+	span[title^="schnelle Bewegung"]				{ font-size: 0; }
+	span[title^="schnelle Bewegung"]:before		{ content: url(images/z/bewegung.png); }
+	span[title^="Tarnung"]				{ font-size: 0; }
+	span[title^="Tarnung"]:before		{ content: url(images/z/tarnung.png); }
+	span[title^="Rückangriff gegen"]			{ font-size: 0; }
+	span[title^="Rückangriff gegen"]:before	{ content: url(images/z/rangriff.png); }
+	span[title^="Feueröl"]				{ font-size: 0; }
+	span[title^="Feueröl"]:before		{ content: url(images/z/feueroel.png); }
+	span[title^="Clan-Krieg"]				{ font-size: 0; }
+	span[title^="Clan-Krieg"]:before		{ content: url(images/z/clankrieg.png); }
+	span[title^="Fliegen"]				{ font-size: 0; }
+	span[title^="Fliegen"]:before		{ content: url(images/z/fliegen.png); }
+	span[title^="Phasenortung"]				{ font-size: 0; }
+	span[title^="Phasenortung"]:before		{ content: url(images/z/Phasenortung.png); }
+	span[title^="Phasensicht"]				{ font-size: 0; }
+	span[title^="Phasensicht"]:before		{ content: url(images/z/phasensicht.png); }
+	span[title^="rote Würfel"]				{ font-size: 0; }
+	span[title^="rote Würfel"]:before		{ content: url(images/z/rotewuerfel.png); }
+	span[title^="Nordpolarisierung"]			{ font-size: 0; }
+	span[title^="Nordpolarisierung"]:before		{ content: url(images/z/nordpolarisierung.png); }
+	span[title^="Ostpolarisierung"]			{ font-size: 0; }
+	span[title^="Ostpolarisierung"]:before		{ content: url(images/z/ostpolarisierung.png); }
+	span[title^="Südpolarisierung"]			{ font-size: 0; }
+	span[title^="Südpolarisierung"]:before		{ content: url(images/z/suedpolarisierung.png); }
+	span[title^="Westpolarisierung"]			{ font-size: 0; }
+	span[title^="Westpolarisierung"]:before		{ content: url(images/z/westpolarisierung.png); }
+	span[title^="Korlad-Nuss Trank"]			{ font-size: 0; }
+	span[title^="Korlad-Nuss Trank"]:before		{ content: url(images/z/nusstrank.png); }
+	span[title^="Trank der Phasenrisse"]			{ font-size: 0; }
+	span[title^="Trank der Phasenrisse"]:before		{ content: url(images/z/phasenriss.png); }
+	span[title^="Goldduft"]			{ font-size: 0; }
+	span[title^="Goldduft"]:before		{ content: url(images/z/goldduft.png); }
+	span[title^="Brennend"]			{ font-size: 0; }
+	span[title^="Brennend"]:before		{ content: url(images/z/feuer.png); }
+	span[title^="Rennen"]			{ font-size: 0; }
+	span[title^="Rennen"]:before		{ content: url(images/z/rennen.png); }
+	span[title^="langsame Bewegung"]			{ font-size: 0; }
+	span[title^="langsame Bewegung"]:before		{ content: url(images/z/langsam.png); }
+	span[title^="Nebelschwaden"]			{ font-size: 0; }
+	span[title^="Nebelschwaden"]:before		{ content: url(images/z/nebelschwaden.png); }
+	span[title^="Pflanzensicht"]			{ font-size: 0; }
+	span[title^="Pflanzensicht"]:before		{ content: url(images/z/pflanzensicht.png); }
+	span[title^="Seelensicht"]				{ font-size: 0; }
+	span[title^="Seelensicht"]:before		{ content: url(images/z/seelensicht.png); }
+	span[title^="Archäologe"]				{ font-size: 0; }
+	span[title^="Archäologe"]:before		{ content: url(images/z/spaten.png); }
+	span[title^="Leichenfledderei"]			{ font-size: 0; }
+	span[title^="Leichenfledderei"]:before	{ content: url(images/z/fleddern.png); }
+	span[title^="Ring des Jägers"]			{ font-size: 0; }
+	span[title^="Ring des Jägers"]:before	{ content: url(images/z/ring.png); }
+	span[title^="Blitzschild"]			{ font-size: 0; }
+	span[title^="Blitzschild"]:before	{ content: url(images/z/blitzschild.png); }
+	span[title^="einzigartige NPC Sicht"]			{ font-size: 0; }
+	span[title^="einzigartige NPC Sicht"]:before	{ content: url(images/z/npcsicht.png); }
+	span[title^="Trank der verlorenen Dinge"]			{ font-size: 0; }
+	span[title^="Trank der verlorenen Dinge"]:before	{ content: url(images/z/verlorenedinge.png); }
+	span[title^="Plünderung +8"]			{ font-size: 0; }
+	span[title^="Plünderung +8"]:before	{ content: url(images/z/ringplunder.png); }
+	span[title^="Großwildjäger"]			{ font-size: 0; }
+	span[title^="Großwildjäger"]:before	{ content: url(images/z/grosswild_ring.png); }
+	span[title^="weiße Schokolade"]			{ font-size: 0; }
+	span[title^="weiße Schokolade"]:before	{ content: url(images/z/weisse_schokolade.png); }
+	span[title^="Pastille des Fliegens"][title$="(Noch 3 NPCs)"] 		{ font-size: 0; }
+	span[title^="Pastille des Fliegens"][title$="(Noch 3 NPCs)"]:before	{ content: url(images/z/pastille_fly3.png); }
+	span[title^="Pastille des Fliegens"][title$="(Noch 2 NPCs)"] 		{ font-size: 0; }
+	span[title^="Pastille des Fliegens"][title$="(Noch 2 NPCs)"]:before	{ content: url(images/z/pastille_fly2.png); }
+	span[title^="Pastille des Fliegens"][title$="(Noch ein NPC)"] 		{ font-size: 0; }
+	span[title^="Pastille des Fliegens"][title$="(Noch ein NPC)"]:before	{ content: url(images/z/pastille_fly1.png); }
+	span[title^="Geburtstagstorte"]			{ font-size: 0; }
+	span[title^="Geburtstagstorte"]:before	{ content: url(images/z/torte.png); }
+	span[title^="Aura der Wut"]			{ font-size: 0; }
+	span[title^="Aura der Wut"]:before	{ content: url(images/z/wut.png); }
+	span[title^="Birnenbrand"]			{ font-size: 0; }
+	span[title^="Birnenbrand"]:before	{ content: url(images/z/birnenbrand.png); }/* Waffenzustand */
+#listrow_int ~ p.listrow[title$=" 0%"]:before { content: " (<3% - REPAIR)"; color: #F00000;  }
+#listrow_int ~ p.listrow[title$=" 1%"]:before { content: " (<3% - REPAIR)"; color: #F00000; }
+#listrow_int ~ p.listrow[title$=" 2%"]:before { content: " (<3% - REPAIR)"; color: #F00000; }
+#listrow_int ~ p.listrow[title$=" 3%"]:before { content: url(images/achtung2.gif) " (3%)"; color: #F00000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 4%"]:before { content: url(images/achtung2.gif) " (4%)"; color: #F00000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 5%"]:before { content: url(images/achtung.gif) " (5%)"; color: #F00000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 6%"]:before { content: url(images/warnung.png) " (6%)"; color: #F07100;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 7%"]:before { content: url(images/warnung.png) " (7%)"; color: #F07100;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 8%"]:before { content: url(images/warnung.png) " (8%)"; color: #F07100;font-size: smaller; }
+#listrow_int ~ p.listrow[title$=" 9%"]:before { content: url(images/warnung.png) " (9%)"; color: #F07100;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="10%"]:before { content: " (10%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="11%"]:before { content: " (11%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="12%"]:before { content: " (12%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="13%"]:before { content: " (13%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="14%"]:before { content: " (14%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="15%"]:before { content: " (15%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="16%"]:before { content: " (16%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="17%"]:before { content: " (17%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="18%"]:before { content: " (18%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="19%"]:before { content: " (19%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="20%"]:before { content: " (20%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="21%"]:before { content: " (21%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="22%"]:before { content: " (22%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="23%"]:before { content: " (23%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="24%"]:before { content: " (24%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="25%"]:before { content: " (25%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="26%"]:before { content: " (26%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="27%"]:before { content: " (27%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="28%"]:before { content: " (28%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="29%"]:before { content: " (29%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="30%"]:before { content: " (30%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="31%"]:before { content: " (31%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="32%"]:before { content: " (32%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="33%"]:before { content: " (33%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="34%"]:before { content: " (34%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="35%"]:before { content: " (35%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="36%"]:before { content: " (36%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="37%"]:before { content: " (37%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="38%"]:before { content: " (38%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="39%"]:before { content: " (39%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="40%"]:before { content: " (40%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="41%"]:before { content: " (41%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="42%"]:before { content: " (42%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="43%"]:before { content: " (43%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="44%"]:before { content: " (44%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="45%"]:before { content: " (45%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="46%"]:before { content: " (46%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="47%"]:before { content: " (47%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="48%"]:before { content: " (48%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="49%"]:before { content: " (49%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="50%"]:before { content: " (50%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="51%"]:before { content: " (51%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="52%"]:before { content: " (52%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="53%"]:before { content: " (53%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="54%"]:before { content: " (54%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="55%"]:before { content: " (55%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="56%"]:before { content: " (56%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="57%"]:before { content: " (57%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="58%"]:before { content: " (58%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="59%"]:before { content: " (59%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="60%"]:before { content: " (60%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="61%"]:before { content: " (61%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="62%"]:before { content: " (62%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="63%"]:before { content: " (63%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="64%"]:before { content: " (64%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="65%"]:before { content: " (65%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="66%"]:before { content: " (66%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="67%"]:before { content: " (67%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="68%"]:before { content: " (68%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="69%"]:before { content: " (69%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="70%"]:before { content: " (70%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="71%"]:before { content: " (71%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="72%"]:before { content: " (72%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="73%"]:before { content: " (73%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="74%"]:before { content: " (74%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="75%"]:before { content: " (75%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="76%"]:before { content: " (76%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="77%"]:before { content: " (77%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="78%"]:before { content: " (78%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="79%"]:before { content: " (79%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="80%"]:before { content: " (80%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="81%"]:before { content: " (81%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="82%"]:before { content: " (82%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="83%"]:before { content: " (83%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="84%"]:before { content: " (84%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="85%"]:before { content: " (85%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="86%"]:before { content: " (86%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="87%"]:before { content: " (87%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="88%"]:before { content: " (88%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="89%"]:before { content: " (89%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="90%"]:before { content: " (90%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="91%"]:before { content: " (91%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="92%"]:before { content: " (92%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="93%"]:before { content: " (93%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="94%"]:before { content: " (94%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="95%"]:before { content: " (95%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="96%"]:before { content: " (96%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="97%"]:before { content: " (97%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="98%"]:before { content: " (98%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="99%"]:before { content: " (99%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="100%"]:before { content: " (100%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="101%"]:before { content: " (101%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="102%"]:before { content: " (102%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="103%"]:before { content: " (103%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="104%"]:before { content: " (104%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="105%"]:before { content: " (105%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="106%"]:before { content: " (106%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="107%"]:before { content: " (107%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="108%"]:before { content: " (108%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="109%"]:before { content: " (109%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="110%"]:before { content: " (110%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="111%"]:before { content: " (111%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="112%"]:before { content: " (112%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="113%"]:before { content: " (113%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="114%"]:before { content: " (114%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="115%"]:before { content: " (115%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="116%"]:before { content: " (116%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="117%"]:before { content: " (117%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="118%"]:before { content: " (118%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="119%"]:before { content: " (119%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="120%"]:before { content: " (120%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="121%"]:before { content: " (121%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="122%"]:before { content: " (122%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="123%"]:before { content: " (123%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="124%"]:before { content: " (124%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="125%"]:before { content: " (125%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="126%"]:before { content: " (126%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="127%"]:before { content: " (127%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="128%"]:before { content: " (128%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="129%"]:before { content: " (129%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="130%"]:before { content: " (130%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="131%"]:before { content: " (131%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="132%"]:before { content: " (132%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="133%"]:before { content: " (133%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="134%"]:before { content: " (134%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="135%"]:before { content: " (135%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="136%"]:before { content: " (136%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="137%"]:before { content: " (137%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="138%"]:before { content: " (138%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="139%"]:before { content: " (139%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="140%"]:before { content: " (140%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="141%"]:before { content: " (141%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="142%"]:before { content: " (142%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="143%"]:before { content: " (143%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="144%"]:before { content: " (144%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="145%"]:before { content: " (145%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="146%"]:before { content: " (146%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="147%"]:before { content: " (147%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="148%"]:before { content: " (148%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="149%"]:before { content: " (149%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="150%"]:before { content: " (150%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="151%"]:before { content: " (151%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="152%"]:before { content: " (152%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="153%"]:before { content: " (153%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="154%"]:before { content: " (154%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="155%"]:before { content: " (155%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="156%"]:before { content: " (156%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="157%"]:before { content: " (157%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="158%"]:before { content: " (158%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="159%"]:before { content: " (159%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="160%"]:before { content: " (160%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="161%"]:before { content: " (161%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="162%"]:before { content: " (162%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="163%"]:before { content: " (163%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="164%"]:before { content: " (164%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="165%"]:before { content: " (165%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="166%"]:before { content: " (166%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="167%"]:before { content: " (167%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="168%"]:before { content: " (168%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="169%"]:before { content: " (169%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="170%"]:before { content: " (170%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="171%"]:before { content: " (171%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="172%"]:before { content: " (172%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="173%"]:before { content: " (173%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="174%"]:before { content: " (174%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="175%"]:before { content: " (175%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="176%"]:before { content: " (176%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="177%"]:before { content: " (177%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="178%"]:before { content: " (178%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="179%"]:before { content: " (179%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="180%"]:before { content: " (180%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="181%"]:before { content: " (181%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="182%"]:before { content: " (182%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="183%"]:before { content: " (183%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="184%"]:before { content: " (184%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="185%"]:before { content: " (185%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="186%"]:before { content: " (186%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="187%"]:before { content: " (187%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="188%"]:before { content: " (188%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="189%"]:before { content: " (189%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="190%"]:before { content: " (190%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="191%"]:before { content: " (191%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="192%"]:before { content: " (192%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="193%"]:before { content: " (193%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="194%"]:before { content: " (194%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="195%"]:before { content: " (195%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="196%"]:before { content: " (196%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="197%"]:before { content: " (197%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="198%"]:before { content: " (198%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="199%"]:before { content: " (199%)"; color: #008000;font-size: smaller; }
+#listrow_int ~ p.listrow[title$="200%"]:before { content: " (200%)"; color: #008000;font-size: smaller; }
+/* Tollo Fix */
+#i_1 { color:var(--tollo)!important }
+#i_2 { color:var(--tollo)!important }
+#i_3 { color:var(--tollo)!important }
+#i_4 { color:var(--tollo)!important }
+#i_5 { color:var(--tollo)!important }
+#i_6 { color:var(--tollo)!important }
+#i_7 { color:var(--tollo)!important }
+#i_8 { color:var(--tollo)!important }
+#i_9 { color:var(--tollo)!important }
+#i_10 { color:var(--tollo)!important }
+#i_11 { color:var(--tollo)!important }
+#i_12 { color:var(--tollo)!important }
+#i_13 { color:var(--tollo)!important }
+#i_14 { color:var(--tollo)!important }
+#i_15 { color:var(--tollo)!important }
+#i_16 { color:var(--tollo)!important }
+#i_17 { color:var(--tollo)!important }
+#i_18 { color:var(--tollo)!important }
+#i_19 { color:var(--tollo)!important }
+#i_20 { color:var(--tollo)!important }
+#i_21 { color:var(--tollo)!important }
+#i_22 { color:var(--tollo)!important }
+#i_23 { color:var(--tollo)!important }
+#i_24 { color:var(--tollo)!important }
+#i_25 { color:var(--tollo)!important }
+/* frames bg */
+.framebannerbg {
+	background-color: #200000;
+	/* background-image: url(red_images/mittelalter8.jpg); */
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #000000;
+}
+.framebannerbg:before {
+top : 0px;
+left : 0px;
+position : absolute;
+content : url("https://freewar.zocker.eu/grafik.php");
+width : 350px;
+height : 75px;
+} 
+/*  Options Menü unter Karte */
+
+.framemenubg:after{
+	content: "";
+	position: absolute;
+	top: 42px;
+	left: 80px;
+	width: 118px;
+	height: 13px;
+	border: 1px solid #826D3A;
+	color: var(--link);
+	background: var(--backg);
+	box-shadow: 0px 0px 10px #826D3A;
+	border-radius: 6px;
+	z-index: -1;
+}
+.framemenubg a{position:absolute;font-size:1px;color:transparent;line-height:200%;white-space:nowrap;}
+.framemenubg a:hover{text-decoration:none !important;}
+.framemenubg a:hover:before{content:url(red_images/menuhover.png);position:absolute;top:1px;left:1px;}
+.framemenubg a:hover:after{
+	position: absolute;
+	color: var(--link);
+	font-size: var(--font11);
+	width: 280px;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 3px;
+	z-index: 1;
+	opacity: 0.75;
+}
+.framemenubg div[align=center]{position:absolute;top:0px;left:0px;color:transparent;text-align:left !important;height:65px;width:280px;}
+.framemenubg a[href*="reload=true"]{left:8px;top:3px;width:20px;height:31px;background:url(red_images/menu1.png) no-repeat 1px 2px;padding-left:6px;}
+.framemenubg a[href*="reload=true"]:hover:after{content:"Aktualisieren";top:45px;left:-9px;}
+.framemenubg a[href*="statsmap.php"]{left:34px;top:3px;width:25px;height:31px;background:url(red_images/menu2.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="statsmap.php"]:hover:after{content:"Karte";top:45px;left:-37px;}
+.framemenubg a[href*="quests.php"] {
+	left:60px;top:3px;width:25px;height:31px;border-left:60px;border-right:0px;
+	background: url('red_images/menu10.png') no-repeat 1px 2px;
+}
+.framemenubg a[href*="quests.php"]:hover:after{content:"Quests";top:45px;left:-63px;}
+.framemenubg a[href*="forum.freewar"]{left:86px;top:3px;width:25px;height:31px;background:url(red_images/menu3.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="forum.freewar"]:hover:after{content:"Forum";top:45px;left:-89px;}
+.framemenubg a[href*="profil.php"]{left:112px;top:3px;width:25px;height:31px;background:url(red_images/menu4.png) no-repeat 0px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="profil.php"]:hover:after{content:"Einstellungen";top:45px;left:-115px;}
+.framemenubg a[href*="action=arch"]{left:138px;top:3px;width:25px;height:31px;background:url(red_images/menu5.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="action=arch"]:hover:after{content:"Archiv";top:45px;left:-141px;}
+.framemenubg a[href*="friends.php"]{left:164px;top:3px;width:25px;height:31px;background:url(red_images/menu6.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="friends.php"]:hover:after{content:"Freunde";top:45px;left:-167px;}
+.framemenubg a[href*="stats.php"]{left:190px;top:3px;width:25px;height:31px;background:url(red_images/menu7.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="stats.php"]:hover:after{content:"Statistik";top:45px;left:-193px;}
+.framemenubg a[href*="support.php"]{left:216px;top:3px;width:25px;height:31px;background:url(red_images/menu8.png) no-repeat 1px 2px;border-left:0px;border-right:0px;}
+.framemenubg a[href*="support.php"]:hover:after{content:"Support";top:45px;left:-219px;}
+.framemenubg a[href*="logout.php"]{left:242px;top:3px;width:25px;height:31px;background:url(red_images/menu9.png) no-repeat 1px 2px;border-left:0px;border-radius:0px 6px 6px 0px;}
+.framemenubg a[href*="logout.php"]:hover:after{content:"Logout";top:45px;left:-245px;}
+.framemenubg a[href*="stats.php?action=exstates"]{left:220px;top:35px;width:24px;height:24px;background:url(red_images/zustand.png) no-repeat 1px 2px;border-left:0px;border-radius:0px 6px 6px 0px;}
+.framemenubg a[href*="stats.php?action=exstates"]:hover:after{content:"Zustände";top:13px;left:-221px;}
+.framemenubg a[href*="admin.php"]{left:250px;top:35px;width:24px;height:24px;background:url(red_images/admin.png) no-repeat 1px 2px;border-left:0px;border-radius:0px 6px 6px 0px;}
+.framemenubg a[href*="admin.php"]:hover:after{content:"Support";top:25px;left:-251px;}
+
+.framemenubg a[href*="whisperlog.php"]{left:55px;top:35px;width:24px;height:24px;background:url(red_images/whisper.png) no-repeat 1px 2px;border-left:0px;border-radius:0px 6px 6px 0px;}
+.framemenubg a[href*="whisperlog.php"]:hover:after{content:"Flüsterlog";top:13px;left:-55px;}
+
+
+/* QUESTS */
+.framemenubg span[data-quests='3'] {position: absolute;font-size: var(--font9);color: var(--link);top:31px;left:50px;}
+.framemenubg span[data-quests='2'] {position: absolute;font-size: var(--font9);color: var(--link);top:31px;left:50px;}
+.framemenubg span[data-quests='1'] {position: absolute;font-size: var(--font9);color: var(--link);top:31px;left:50px;}
+.framemenubg span[data-quests='0']:after{position: absolute;font-size: var(--font9);color: var(--link);top:31px;left:30px;content:"Alle Quests erledigt!";}
+.framemenubg span[data-quests='']:after{position: absolute;font-size: var(--font9);color: var(--link);top:31px;left:30px;content:"Alle Quests erledigt!";}
+/* END QUESTS */
+
+.framemenubg a[href*="extendedmenu.php"]{display: none;}
+.framemenubg a[href*="showallmsgs=1"]{position:static;display:block;color:transparent !important;width:100px;margin:62px 0px 0px -30px;background:transparent !important;-o-transform:translate(25px, 19px); }
+.framemenubg span[data-msgs]{ color: var(--link); font-size: 0px}
+.framemenubg span[data-msgs]:before {position:absolute;left:2px;bottom:-20px;
+content: url(red_images/menu12.png);}
+.framemenubg span[data-msgs]:after {font-size: var(--font14);position:absolute;left:30px;bottom:-10px;
+content: attr(data-msgs);}
+.framemenubg a[href*="showallmsgs=1"]{position:absolute;left:30px;bottom:30px;color:transparent;}
+.framemenubg a[href*="showallmsgs=1"]:hover:after{content:"Nachrichten";top:14px;left:0px;}
